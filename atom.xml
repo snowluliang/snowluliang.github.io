@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Snow</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-02T09:05:47.757Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>snowluliang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="http://yoursite.com/2017/03/02/My-New-Post/"/>
+    <id>http://yoursite.com/2017/03/02/My-New-Post/</id>
+    <published>2017-03-02T09:03:26.000Z</published>
+    <updated>2017-03-02T09:05:47.757Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;重新出发&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="Techno" scheme="http://yoursite.com/tags/Techno/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>发现小偷</title>
+    <link href="http://yoursite.com/2017/03/01/%E5%8F%91%E7%8E%B0%E5%B0%8F%E5%81%B7/"/>
+    <id>http://yoursite.com/2017/03/01/发现小偷/</id>
+    <published>2017-03-01T06:36:24.000Z</published>
+    <updated>2017-03-01T08:01:21.639Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2016年12月28号中午从新郑机场买了去郑州汽车站的巴士票。到了郑州汽车站买了两点十分回家的票,检票上车后,我看旁边有位带小孩子的年轻妈妈,就让她们俩先上车了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="写作" scheme="http://yoursite.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello</title>
+    <link href="http://yoursite.com/2017/02/28/article-tittle/"/>
+    <id>http://yoursite.com/2017/02/28/article-tittle/</id>
+    <published>2017-02-28T15:49:57.000Z</published>
+    <updated>2017-03-01T07:40:16.287Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;时间:2017年2月28号,23:52分创建.&lt;/p&gt;
+&lt;p&gt;新的旅程刚刚开始,你要努力!&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Exercise" scheme="http://yoursite.com/categories/Exercise/"/>
+    
+    
+      <category term="新建" scheme="http://yoursite.com/tags/%E6%96%B0%E5%BB%BA/"/>
+    
+  </entry>
+  
+</feed>
