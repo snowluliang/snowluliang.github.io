@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-02T09:05:47.757Z</updated>
+  <updated>2017-03-02T14:58:17.244Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,21 +16,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My New Post</title>
+    <title>重新出发</title>
     <link href="http://yoursite.com/2017/03/02/My-New-Post/"/>
     <id>http://yoursite.com/2017/03/02/My-New-Post/</id>
     <published>2017-03-02T09:03:26.000Z</published>
-    <updated>2017-03-02T09:05:47.757Z</updated>
+    <updated>2017-03-02T14:58:17.244Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;重新出发&lt;/p&gt;
-
+      &lt;p&gt;重新出发.&lt;/p&gt;
+&lt;p&gt;到目前为止,这个网站,我已经折腾3天了,从二月的最后一天,到现在,一直在忙活与创建这个个人博客…&lt;/p&gt;
+&lt;p&gt;不过感觉还不错,希望大于失望,又学习了一项新技能,内心还是禁不住泛开了花一样的开心。&lt;/p&gt;
     
     </summary>
     
+      <category term="Techno" scheme="http://yoursite.com/categories/Techno/"/>
     
-      <category term="Techno" scheme="http://yoursite.com/tags/Techno/"/>
     
   </entry>
   
@@ -39,7 +40,7 @@
     <link href="http://yoursite.com/2017/03/01/%E5%8F%91%E7%8E%B0%E5%B0%8F%E5%81%B7/"/>
     <id>http://yoursite.com/2017/03/01/发现小偷/</id>
     <published>2017-03-01T06:36:24.000Z</published>
-    <updated>2017-03-01T08:01:21.639Z</updated>
+    <updated>2017-03-02T13:58:04.652Z</updated>
     
     <summary type="html">
     
@@ -47,8 +48,8 @@
     
     </summary>
     
+      <category term="写作" scheme="http://yoursite.com/categories/%E5%86%99%E4%BD%9C/"/>
     
-      <category term="写作" scheme="http://yoursite.com/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
@@ -57,7 +58,7 @@
     <link href="http://yoursite.com/2017/02/28/article-tittle/"/>
     <id>http://yoursite.com/2017/02/28/article-tittle/</id>
     <published>2017-02-28T15:49:57.000Z</published>
-    <updated>2017-03-01T07:40:16.287Z</updated>
+    <updated>2017-03-02T13:58:35.650Z</updated>
     
     <summary type="html">
     
@@ -69,8 +70,6 @@
     
       <category term="Exercise" scheme="http://yoursite.com/categories/Exercise/"/>
     
-    
-      <category term="新建" scheme="http://yoursite.com/tags/%E6%96%B0%E5%BB%BA/"/>
     
   </entry>
   

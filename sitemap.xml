@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/music/index.html</loc>
+    <loc>http://yoursite.com/2017/03/02/My-New-Post/</loc>
     
-    <lastmod>2017-03-02T12:05:56.431Z</lastmod>
+    <lastmod>2017-03-02T14:58:17.244Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2017/03/02/My-New-Post/</loc>
+    <loc>http://yoursite.com/2017/02/28/article-tittle/</loc>
     
-    <lastmod>2017-03-02T09:05:47.757Z</lastmod>
+    <lastmod>2017-03-02T13:58:35.650Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/03/01/%E5%8F%91%E7%8E%B0%E5%B0%8F%E5%81%B7/</loc>
+    
+    <lastmod>2017-03-02T13:58:04.652Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/music/index.html</loc>
+    
+    <lastmod>2017-03-02T13:57:19.000Z</lastmod>
     
   </url>
   
@@ -40,20 +54,6 @@
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2017-03-01T14:20:13.107Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/01/%E5%8F%91%E7%8E%B0%E5%B0%8F%E5%81%B7/</loc>
-    
-    <lastmod>2017-03-01T08:01:21.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/02/28/article-tittle/</loc>
-    
-    <lastmod>2017-03-01T07:40:16.287Z</lastmod>
     
   </url>
   
