@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/music/index.html</loc>
+    
+    <lastmod>2017-03-04T15:33:41.928Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/03/02/My-New-Post/</loc>
     
     <lastmod>2017-03-02T14:58:17.244Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2017/03/01/%E5%8F%91%E7%8E%B0%E5%B0%8F%E5%81%B7/</loc>
     
     <lastmod>2017-03-02T13:58:04.652Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/music/index.html</loc>
-    
-    <lastmod>2017-03-02T13:57:19.000Z</lastmod>
     
   </url>
   
