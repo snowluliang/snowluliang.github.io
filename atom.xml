@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-11T07:27:09.804Z</updated>
+  <updated>2017-03-12T15:41:15.433Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python学习(一)</title>
+    <link href="http://yoursite.com/2017/03/12/Python%E5%AD%A6%E4%B9%A0-%E4%B8%80/"/>
+    <id>http://yoursite.com/2017/03/12/Python学习-一/</id>
+    <published>2017-03-12T15:41:15.000Z</published>
+    <updated>2017-03-12T15:41:15.433Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Win7-64位系统安装TensorFlow</title>
     <link href="http://yoursite.com/2017/03/11/Win7-64%E4%BD%8D%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85TensorFlow/"/>
     <id>http://yoursite.com/2017/03/11/Win7-64位系统安装TensorFlow/</id>
     <published>2017-03-11T06:58:18.000Z</published>
-    <updated>2017-03-11T07:27:09.804Z</updated>
+    <updated>2017-03-11T07:32:02.236Z</updated>
     
     <summary type="html">
     
