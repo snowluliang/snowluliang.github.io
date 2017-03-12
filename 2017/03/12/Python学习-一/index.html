@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习," />
 
 
 
@@ -89,16 +89,24 @@
 
 
 
-<meta name="description" content="学习 学习 再学习">
+<meta name="description" content="1,list:
+Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.
+123&amp;gt;&amp;gt;&amp;gt; classmates.append(&amp;apos;Adam&amp;apos;)&amp;gt;&amp;gt;&amp;gt; classmates[&amp;apos;Michael&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python学习(一)">
 <meta property="og:url" content="http://yoursite.com/2017/03/12/Python学习-一/index.html">
 <meta property="og:site_name" content="Snow">
-<meta property="og:description" content="学习 学习 再学习">
-<meta property="og:updated_time" content="2017-03-12T15:41:15.433Z">
+<meta property="og:description" content="1,list:
+Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.
+123&amp;gt;&amp;gt;&amp;gt; classmates.append(&amp;apos;Adam&amp;apos;)&amp;gt;&amp;gt;&amp;gt; classmates[&amp;apos;Michael&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;">
+<meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/reduce.png">
+<meta property="og:updated_time" content="2017-03-12T16:10:08.952Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(一)">
-<meta name="twitter:description" content="学习 学习 再学习">
+<meta name="twitter:description" content="1,list:
+Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.
+123&amp;gt;&amp;gt;&amp;gt; classmates.append(&amp;apos;Adam&amp;apos;)&amp;gt;&amp;gt;&amp;gt; classmates[&amp;apos;Michael&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;">
+<meta name="twitter:image" content="http://omn25tqvz.bkt.clouddn.com/reduce.png">
 
 
 
@@ -370,6 +378,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/经验/" itemprop="url" rel="index">
+                    <span itemprop="name">经验</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -405,7 +435,95 @@
       
 
       
-        
+        <p>1,list:</p>
+<p>Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; classmates.append(&apos;Adam&apos;)</div><div class="line">&gt;&gt;&gt; classmates</div><div class="line">[&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;, &apos;Adam&apos;]</div></pre></td></tr></table></figure>
+<p>也可以指定索引号,添加到指定位置,</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; classmates.insert(1, &apos;Jack&apos;)</div><div class="line">&gt;&gt;&gt; classmates</div><div class="line">[&apos;Michael&apos;, &apos;Jack&apos;, &apos;Bob&apos;, &apos;Tracy&apos;, &apos;Adam&apos;]</div></pre></td></tr></table></figure>
+<p>删除元素: pop()方法  删除末尾元素,也可指定索引删除指定位置pop(i)</p>
+<a id="more"></a>
+<p>2,tuple</p>
+<p>另外一种有序列表,元组,和list非常相似,但tuple一旦初始化,就不能更改,</p>
+<p>代码更安全,能用tuple替代list,就替换掉,</p>
+<p>定义一个元素时,例子:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; t = (1,)</div><div class="line">&gt;&gt;&gt; t(1,)</div></pre></td></tr></table></figure>
+<p>3,条件判断</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;age = 20</div><div class="line">&gt;&gt;&gt;if age &gt;= 6:    </div><div class="line">...    print(&apos;teenager&apos;)</div><div class="line">...elif age &gt;= 18: </div><div class="line">...    print(&apos;adult&apos;)</div><div class="line">...else:    </div><div class="line">...    print(&apos;kid&apos;)</div></pre></td></tr></table></figure>
+<p>4,循环</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;sum = 0for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:</div><div class="line">...    sum = sum + x</div><div class="line">...    print(sum)</div></pre></td></tr></table></figure>
+<p>range()函数:整数序列,包前不包后,range(5) 表示(0,1,2,3,4)</p>
+<p>要特别注意，不要滥用break和continue语句。break和continue会造成代码执行逻辑分叉过多，容易出错。大多数循环并不需要用到break和continue语句，上面的两个例子，都可以通过改写循环条件或者修改循环逻辑，去掉break和continue语句。</p>
+<p>有些时候，如果代码写得有问题，会让程序陷入“死循环”，也就是永远循环下去。这时可以用Ctrl+C退出程序，或者强制结束Python进程。</p>
+<p>5,dict </p>
+<p>Python 内置的词典,极快的查找速度,原因 dict通过索引查找</p>
+<p>一个Key对应一个value,如果有多个,后面的话替换掉前面的</p>
+<p>和list比较，dict有以下几个特点：</p>
+<ol>
+<li>查找和插入的速度极快，不会随着key的增加而变慢；</li>
+<li>需要占用大量的内存，内存浪费多。</li>
+</ol>
+<p>而list相反：</p>
+<ol>
+<li>查找和插入的时间随着元素的增加而增加；</li>
+<li>占用空间小，浪费内存很少。</li>
+</ol>
+<p>所以，dict是用空间来换取时间的一种方法。</p>
+<p>需要牢记的第一条就是dict的key必须是不可变对象。</p>
+<p>6,set</p>
+<p>一组key的集合,不存储value,在set中没有重复的key,无序的无重复的集合</p>
+<p>重复元素自动过滤,</p>
+<p>add(key)添加元素,remove(key)删除元素</p>
+<p>7,函数</p>
+<p>定义函数时，需要确定函数名和参数个数；</p>
+<p>如果有必要，可以先对参数的数据类型做检查；</p>
+<p>函数体内部可以用return随时返回函数结果；</p>
+<p>函数执行完毕也没有return语句时，自动return None。</p>
+<p>函数可以同时返回多个值，但其实就是一个tuple。</p>
+<p>Python的函数具有非常灵活的参数形态，既可以实现简单的调用，又可以传入非常复杂的参数。</p>
+<p>默认参数一定要用不可变对象，如果是可变对象，程序运行时会有逻辑错误！</p>
+<p>要注意定义可变参数和关键字参数的语法：</p>
+<p>*args是可变参数，args接收的是一个tuple；</p>
+<p>**kw是关键字参数，kw接收的是一个dict。</p>
+<p>以及调用函数时如何传入可变参数和关键字参数的语法：</p>
+<p>可变参数既可以直接传入：func(1, 2, 3)，又可以先组装list或tuple，再通过<em>args传入：func(</em>(1, 2, 3))；</p>
+<p>关键字参数既可以直接传入：func(a=1, b=2)，又可以先组装dict，再通过<strong>kw传入：func(</strong>{‘a’: 1, ‘b’: 2})。</p>
+<p>使用<em>args和*</em>kw是Python的习惯写法，当然也可以用其他参数名，但最好使用习惯用法。</p>
+<p>命名的关键字参数是为了限制调用者可以传入的参数名，同时可以提供默认值。</p>
+<p>定义命名的关键字参数在没有可变参数的情况下不要忘了写分隔符*，否则定义的将是位置参数。</p>
+<p>8,切片:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; L = list(range(100))&gt;&gt;&gt; L[0, 1, 2, 3, ..., 99]</div></pre></td></tr></table></figure>
+<p>前十个数,取法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; L:10</div></pre></td></tr></table></figure>
+<p>L[开始位置:结束位置:间隔数],包含开始,不包含结束,每隔 间隔数 取数值</p>
+<p>从10开始,每隔5取一个数,到90(不包含90)结束.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; L[10:90:5]</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; tiangan = &apos;甲乙丙丁戊己庚辛壬癸&apos;</div><div class="line">&gt;&gt;&gt; dizhi = &apos;子丑寅卯辰巳午未申酉戌亥&apos;</div><div class="line">&gt;&gt;&gt;</div><div class="line">&gt;&gt;&gt; jiazi = [tiangan[x % len(tiangan)] + dizhi[x % len(dizhi)] for x in range(60)]</div><div class="line">&gt;&gt;&gt;</div><div class="line">&gt;&gt;&gt; print(jiazi)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&apos;甲子&apos;, &apos;乙丑&apos;, &apos;丙寅&apos;, &apos;丁卯&apos;, &apos;戊辰&apos;, &apos;己巳&apos;, &apos;庚午&apos;, &apos;辛未&apos;, &apos;壬申&apos;, &apos;癸酉&apos;, &apos;甲戌&apos;, &apos;乙亥&apos;, &apos;丙子&apos;, &apos;丁丑&apos;, &apos;戊寅&apos;, &apos;己卯&apos;, &apos;庚辰&apos;, &apos;辛巳&apos;, &apos;壬午&apos;, &apos;癸未&apos;, &apos;甲申&apos;, &apos;乙酉&apos;, &apos;丙戌&apos;,&apos;丁亥&apos;, &apos;戊子&apos;, &apos;己丑&apos;, &apos;庚寅&apos;, &apos;辛卯&apos;, &apos;壬辰&apos;, &apos;癸巳&apos;, &apos;甲午&apos;, &apos;乙未&apos;, &apos;丙申&apos;, &apos;丁酉&apos;, &apos;戊戌&apos;, &apos;己亥&apos;, &apos;庚子&apos;, &apos;辛丑&apos;, &apos;壬寅&apos;, &apos;癸卯&apos;, &apos;甲辰&apos;, &apos;乙巳&apos;, &apos;丙午&apos;, &apos;丁未&apos;, &apos;戊申&apos;, &apos;己酉&apos;,&apos;庚戌&apos;, &apos;辛亥&apos;, &apos;壬子&apos;, &apos;癸丑&apos;, &apos;甲寅&apos;, &apos;乙卯&apos;, &apos;丙辰&apos;, &apos;丁巳&apos;, &apos;戊午&apos;, &apos;己未&apos;, &apos;庚申&apos;, &apos;辛酉&apos;, &apos;壬戌&apos;, &apos;癸亥&apos;]</div></pre></td></tr></table></figure>
+<p>9,map()和reduce().<strong><em>重点</em></strong></p>
+<p> map()函数接收两个参数,一个函数,一个Iterable, map()把函数作用在序列的每个元素上</p>
+<p>例如:</p>
+<p><img src="http://omn25tqvz.bkt.clouddn.com/reduce.png" alt=""></p>
+<p>代码如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; def f(x):</div><div class="line">...     return x * x</div><div class="line">...</div><div class="line">&gt;&gt;&gt; r = map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])</div><div class="line">&gt;&gt;&gt; list(r)[1, 4, 9, 16, 25, 36, 49, 64, 81]</div></pre></td></tr></table></figure>
+<p>reduce的用法:</p>
+<p>reduce把一个函数作用在一个序列[x1, x2, x3, …]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算，其效果就是：</p>
+<p>reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)</p>
+<p>比方说对一个序列求和，就可以用reduce实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from functools import reduce</div><div class="line">&gt;&gt;&gt; def add(x, y):</div><div class="line">...     return x + y</div><div class="line">...</div><div class="line">&gt;&gt;&gt; reduce(add, [1, 3, 5, 7, 9])</div><div class="line">25</div></pre></td></tr></table></figure>
+<p>10,filter()</p>
+<p>过滤函数,和map()类似,接收两个函数,一个函数,一个序列,把传入的函数作用于每个元素,返回的是True 或 False,根据返回值判断是否保留元素.</p>
+<p>例如，在一个list中，删掉偶数，只保留奇数，可以这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;def is_odd(n):   </div><div class="line">...    return n % 2 == 1list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))</div><div class="line"># 结果:</div><div class="line">[1, 5, 9, 15]</div></pre></td></tr></table></figure>
+<p>把一个序列中的空字符串删掉，可以这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;def not_empty(s):</div><div class="line">...    return s and s.strip()</div><div class="line">&gt;&gt;&gt;list(filter(not_empty, [&apos;A&apos;, &apos;&apos;, &apos;B&apos;, None, &apos;C&apos;, &apos;  &apos;]))</div><div class="line"># 结果: </div><div class="line">[&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]</div></pre></td></tr></table></figure>
+<p>11,装饰器</p>
+<p>详细解释:<a href="http://www.cnblogs.com/Jerry-Chou/archive/2012/05/23/python-decorator-explain.html" target="_blank" rel="external">网址</a></p>
+<p>12,偏函数</p>
+<p>functools.partial就是帮助我们创建一个偏函数的，不需要我们自己定义int2()，可以直接使用下面的代码创建一个新的函数int2：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import functools</div><div class="line">&gt;&gt;&gt; int2 = functools.partial(int, base=2)</div><div class="line">&gt;&gt;&gt; int2(&apos;1000000&apos;)</div><div class="line">64</div><div class="line">&gt;&gt;&gt; int2(&apos;1010101&apos;)</div><div class="line">85</div></pre></td></tr></table></figure>
+<p>…</p>
+
       
     </div>
 
@@ -430,6 +548,12 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+        </div>
       
 
       
@@ -527,7 +651,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -536,7 +660,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
