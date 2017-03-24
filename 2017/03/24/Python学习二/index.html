@@ -104,7 +104,7 @@
 先import导入,第三方模块,就能用到数据此模块当中的函数和属性
 下载地址">
 <meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/tree.png">
-<meta property="og:updated_time" content="2017-03-24T09:09:49.446Z">
+<meta property="og:updated_time" content="2017-03-24T09:33:46.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(二)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
@@ -461,10 +461,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">	def init(self, name, score): </div><div class="line">    	self.name = name      </div><div class="line">        self.score = score</div></pre></td></tr></table></figure>
 <p>如果需要对属性变量进行更改或取值,可以给类添加get和set方法,通过,get_name,set_sorce,进行修改;</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">class Student(object): </div><div class="line">...</div><div class="line">	def get_name(self):      </div><div class="line">		return self.__name   </div><div class="line">	def set_score(self, score):     </div><div class="line">		if 0 &lt;= score &lt;= 100:          </div><div class="line">			self.__score = score    </div><div class="line">		else:       </div><div class="line">			raise ValueError(&apos;bad score&apos;)</div></pre></td></tr></table></figure>
-<p>其次,  <strong><strong>XXX</strong></strong>  类似这样前后带有双下划线的变量,不是私有变量,可以随意访问. _XXX 带有一个下划线的变量,视为私有变量,不要轻易访问;</p>
+<p>其次,  <em> </em> XXX  <em> </em>  类似这样前后带有双下划线的变量,不是私有变量,可以随意访问. _XXX 带有一个下划线的变量,视为私有变量,不要轻易访问;</p>
 <p>带有双下划线的私有变量一定要从外部访问嘛?</p>
-<p>不一定,带有双下划线的私有变量,Python解释器,其实把  <strong><strong>name  变量给成了  </strong></strong>Student  <strong>__name,  所以,还是可以通过,_Student</strong>name的形式进行访问;</p>
-<p>但是,强烈建议不要这么做.因为不同版本的Python解释器可能会把__name改成不同的变量;</p>
+<p>不一定,带有双下划线的私有变量,Python解释器,其实把  <em> </em> name 变量给成了   <em> Student</em> _ name,  所以,还是可以通过, _Student__name 的形式进行访问;</p>
+<p>但是,强烈建议不要这么做.因为不同版本的Python解释器可能会把 __name 改成不同的变量;</p>
 <p>6,继承和多态</p>
 <p>继承最大的好处就是,子类可以拥有父类的全部方法和功能</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Animal(object): </div><div class="line">	def run(self):</div><div class="line">		print(&apos;Animal is running...&apos;)</div></pre></td></tr></table></figure>
@@ -475,7 +475,7 @@
 <p>子类的run()方法,这就是继承的另一个好处:多态</p>
 <p>当然也可以添加父类没有的方法</p>
 <p>判断一个变量是否是某个类型可以用isinstance()判断：</p>
-<p>>&gt;&gt; isinstance(c, Animal)True</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; isinstance(c, Animal)</div><div class="line">True</div></pre></td></tr></table></figure>
 <p>继承关系树:</p>
 <p><img src="http://omn25tqvz.bkt.clouddn.com/tree.png" alt="img"></p>
 <p>静态语言 vs 动态语言</p>
@@ -513,11 +513,6 @@
     <div>
       
         
-<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/images/mycode.png" alt="snowluliang wechat" style="width: 200px; max-width: 100%;"/>
-    <div>我的微信</div>
-</div>
-
 
       
     </div>
@@ -525,6 +520,27 @@
     <div>
       
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>有帮到您吗? 请支持我继续写作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.jpg" alt="snowluliang WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="snowluliang Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
     </div>
