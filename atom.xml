@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-12T16:11:37.252Z</updated>
+  <updated>2017-03-24T09:09:49.446Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,15 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python学习(二)</title>
+    <link href="http://yoursite.com/2017/03/24/Python%E5%AD%A6%E4%B9%A0%E4%BA%8C/"/>
+    <id>http://yoursite.com/2017/03/24/Python学习二/</id>
+    <published>2017-03-24T08:36:34.000Z</published>
+    <updated>2017-03-24T09:09:49.446Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1,模块,&lt;/p&gt;
+&lt;p&gt;模块最大的好处就是提高了代码的可维护性,避免函数名和包名的冲突,&lt;/p&gt;
+&lt;p&gt;2,使用和安装第三方模块&lt;/p&gt;
+&lt;p&gt;先import导入,第三方模块,就能用到数据此模块当中的函数和属性&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pypi.python.org/pypi&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python学习(一)</title>
     <link href="http://yoursite.com/2017/03/12/Python%E5%AD%A6%E4%B9%A0-%E4%B8%80/"/>
     <id>http://yoursite.com/2017/03/12/Python学习-一/</id>
     <published>2017-03-12T15:41:15.000Z</published>
-    <updated>2017-03-12T16:11:37.252Z</updated>
+    <updated>2017-03-24T09:10:49.677Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;1,list:&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1,list:&lt;/p&gt;
 &lt;p&gt;Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; classmates.append(&amp;apos;Adam&amp;apos;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; classmates&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[&amp;apos;Michael&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Adam&amp;apos;]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;也可以指定索引号,添加到指定位置,&lt;/p&gt;
@@ -33,7 +59,7 @@
     
     </summary>
     
-      <category term="经验" scheme="http://yoursite.com/categories/%E7%BB%8F%E9%AA%8C/"/>
+      <category term="经验,学习记录" scheme="http://yoursite.com/categories/%E7%BB%8F%E9%AA%8C-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     
       <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
