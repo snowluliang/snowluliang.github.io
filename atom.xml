@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-25T15:52:19.653Z</updated>
+  <updated>2017-03-25T15:54:22.220Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/25/Python%E5%AD%A6%E4%B9%A0-%E4%B8%89/"/>
     <id>http://yoursite.com/2017/03/25/Python学习-三/</id>
     <published>2017-03-25T15:27:11.000Z</published>
-    <updated>2017-03-25T15:52:19.653Z</updated>
+    <updated>2017-03-25T15:54:22.220Z</updated>
     
     <summary type="html">
     
@@ -28,7 +28,7 @@
 &lt;p&gt;数据封装,继承和多态只是面向对象编程的3个基础概念&lt;/p&gt;
 &lt;p&gt;2, __slots__ &lt;/p&gt;
 &lt;p&gt;定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,&lt;/p&gt;
-&lt;figure clas
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;class Student(object):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	pass&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
