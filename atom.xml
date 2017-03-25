@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-24T10:25:14.570Z</updated>
+  <updated>2017-03-25T15:52:19.653Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习(三)</title>
+    <link href="http://yoursite.com/2017/03/25/Python%E5%AD%A6%E4%B9%A0-%E4%B8%89/"/>
+    <id>http://yoursite.com/2017/03/25/Python学习-三/</id>
+    <published>2017-03-25T15:27:11.000Z</published>
+    <updated>2017-03-25T15:52:19.653Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1,面型对象高级编程&lt;/p&gt;
+&lt;p&gt;数据封装,继承和多态只是面向对象编程的3个基础概念&lt;/p&gt;
+&lt;p&gt;2, __slots__ &lt;/p&gt;
+&lt;p&gt;定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,&lt;/p&gt;
+&lt;figure clas
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习(二)</title>
