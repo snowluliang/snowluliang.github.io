@@ -101,7 +101,7 @@
 2, __slots__ 
 定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
 12class Student(object):	pass">
-<meta property="og:updated_time" content="2017-03-25T15:56:44.753Z">
+<meta property="og:updated_time" content="2017-03-25T16:01:55.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(三)">
 <meta name="twitter:description" content="1,面型对象高级编程
@@ -480,7 +480,7 @@
 <p>7,错误,调试,测试</p>
 <p>①,错误处理</p>
 <p><strong>try…except…finally…</strong>错误处理机制</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">try:   </div><div class="line">	print(&apos;try...&apos;)   </div><div class="line">    r = 10 / 0   </div><div class="line">    print(&apos;result:&apos;, r)</div><div class="line"> except ZeroDivisionError as e:</div><div class="line"> 	print(&apos;except:&apos;, e)</div><div class="line"> finally:  </div><div class="line"> 	print(&apos;finally...&apos;)</div><div class="line"> print(&apos;END&apos;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">try:   </div><div class="line">	print(&apos;try...&apos;)   </div><div class="line">	r = 10 / 0   </div><div class="line">	print(&apos;result:&apos;, r)</div><div class="line">except ZeroDivisionError as e:</div><div class="line">	print(&apos;except:&apos;, e)</div><div class="line">finally:  </div><div class="line">	print(&apos;finally...&apos;)</div><div class="line">print(&apos;END&apos;)</div></pre></td></tr></table></figure>
 <p>当try执行代码块出错时候,后续代码将不执行,而是执行except语句中的代码,提示错误的出现,如果finally语句中有代码,再执行其语句中的代码,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">try...</div><div class="line">result: 5</div><div class="line">finally...</div><div class="line">END</div></pre></td></tr></table></figure>
 <p>也可以添加多个except语句块,捕获不同错误,还可以加入else语句块,</p>
@@ -493,16 +493,16 @@
 <p>通过logging可以方便的记录错误,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">except Exception as e:   </div><div class="line">	logging.exception(e)</div></pre></td></tr></table></figure>
 <p>抛出错误raise</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def foo(s):   </div><div class="line">	n = int(s) </div><div class="line">    if n==0:     </div><div class="line">    	raise FooError(&apos;invalid value: %s&apos; % s)   </div><div class="line">    return 10 / n</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def foo(s):   </div><div class="line">	n = int(s) </div><div class="line">	if n==0:     </div><div class="line">		raise FooError(&apos;invalid value: %s&apos; % s)   </div><div class="line">	return 10 / n</div></pre></td></tr></table></figure>
 <p>只有在必要的时候才使用自定义的错误类,如果可以用Python内置的错误类,尽量使用内置的错误类,</p>
 <p>②调试</p>
 <p>程序调试的方法有:</p>
 <p>print()直接打印处错误,还需要手动删除</p>
 <p>断言assert,</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">def foo(s):  </div><div class="line">	n = int(s) </div><div class="line">    assert n != 0, &apos;n is zero!&apos;   </div><div class="line">    return 10 / n</div><div class="line">def main():   </div><div class="line">    foo(&apos;0&apos;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">def foo(s):  </div><div class="line">	n = int(s) </div><div class="line">	assert n != 0, &apos;n is zero!&apos;   </div><div class="line">	return 10 / n</div><div class="line">def main():   </div><div class="line">	foo(&apos;0&apos;)</div></pre></td></tr></table></figure>
 <p>表达式 n!=0应该是true,否则,后面的代码会出错,如果断言失败,会抛出AssertionError,</p>
 <p>启用Python解释器时候,可以启用-0来关闭断言</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ python3 -O err.py</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ python3 -0 err.py</div></pre></td></tr></table></figure>
 <p>logging,它不会抛出错误,可以输出到文件,可以指定记录信息的级别,debug,info,warning,error等,</p>
 <p>pdb,python自带的调试器,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># err.py</div><div class="line">s = &apos;0&apos;</div><div class="line">n = int(s)</div><div class="line">print(10 / n)</div></pre></td></tr></table></figure>
@@ -524,7 +524,7 @@
 <p>Python内置的 文档测试(doctest) 可以抽取文档中的代码直接运行</p>
 <p>doctest严格按照Python交互式命令行的输入和输出来判断测试结果是否正确</p>
 <hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">def fact(n):    </div><div class="line">&apos;&apos;&apos;</div><div class="line">&gt;&gt;&gt; fact(1)</div><div class="line">1</div><div class="line">&gt;&gt;&gt; fact(2)</div><div class="line">2</div><div class="line">&gt;&gt;&gt; fact(-1)</div><div class="line">Traceback (most recent call last):</div><div class="line">ValueError</div><div class="line"> &apos;&apos;&apos;    </div><div class="line"> 	if n &lt; 1: </div><div class="line"> 		raise ValueError()  </div><div class="line"> 	if n == 1:     </div><div class="line"> 		return 1  </div><div class="line"> 	return n * fact(n - 1)</div><div class="line"></div><div class="line"> if__name__ == &apos;__main__&apos;:  </div><div class="line"> 	import doctest  </div><div class="line"> 	doctest.testmod()</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">def fact(n):    </div><div class="line">&apos;&apos;&apos;</div><div class="line">&gt;&gt;&gt; fact(1)</div><div class="line">1</div><div class="line">&gt;&gt;&gt; fact(2)</div><div class="line">2</div><div class="line">&gt;&gt;&gt; fact(-1)</div><div class="line">Traceback (most recent call last):</div><div class="line">ValueError</div><div class="line"> &apos;&apos;&apos;    </div><div class="line">	if n &lt; 1: </div><div class="line">		raise ValueError()  </div><div class="line">	if n == 1:     </div><div class="line">		return 1  </div><div class="line">	return n * fact(n - 1)</div><div class="line"></div><div class="line">if__name__ == &apos;__main__&apos;:  </div><div class="line">	import doctest  </div><div class="line">	doctest.testmod()</div></pre></td></tr></table></figure>
 <hr>
 
       
