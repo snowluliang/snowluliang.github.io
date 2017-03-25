@@ -101,7 +101,7 @@
 2, __slots__ 
 定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
 12class Student(object):	pass">
-<meta property="og:updated_time" content="2017-03-25T15:54:22.220Z">
+<meta property="og:updated_time" content="2017-03-25T15:56:44.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(三)">
 <meta name="twitter:description" content="1,面型对象高级编程
@@ -463,7 +463,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">class Dog(Mammal,Animal,Carnivorous):</div><div class="line">	pass</div></pre></td></tr></table></figure>
 <p>这种模式叫做<strong>MixIn</strong>,目的是为了给一个类增加多个功能,在设计类的时候,<strong>优先考虑</strong>通过多重继承来组合多个<strong>MixIn</strong>的功能,而不是设计复杂层次的继承关系,</p>
 <p>5,Enum枚举类</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from enum import Enum, unique</div><div class="line">@unique</div><div class="line">class Weekday(Enum):</div><div class="line">	Sun = 0 # Sun的value被设定为0   </div><div class="line">    Mon = 1   </div><div class="line">    Tue = 2   </div><div class="line">    Wed = 3    </div><div class="line">    Thu = 4  </div><div class="line">    Fri = 5 </div><div class="line">    Sat = 6</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from enum import Enum, unique</div><div class="line">@unique</div><div class="line">class Weekday(Enum):</div><div class="line">	Sun = 0  # Sun的value被设定为0   </div><div class="line">	Mon = 1   </div><div class="line">	Tue = 2   </div><div class="line">	Wed = 3    </div><div class="line">	Thu = 4  </div><div class="line">	Fri = 5 </div><div class="line">	Sat = 6</div></pre></td></tr></table></figure>
 <p>@unique用来检查有没有重复值</p>
 <p>访问枚举类型</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(Weekday.Tue)</div><div class="line">Weekday.Tue</div><div class="line">&gt;&gt;&gt; print(Weekday[&apos;Tue&apos;])</div><div class="line">Weekday.Tue</div><div class="line">&gt;&gt;&gt; print(Weekday.Tue.value)</div><div class="line">2</div><div class="line">&gt;&gt;&gt; print(Weekday(1))</div><div class="line">Weekday.Mon</div></pre></td></tr></table></figure>
