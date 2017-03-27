@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-25T16:08:23.381Z</updated>
+  <updated>2017-03-27T13:26:51.794Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,15 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>&#39;Python学习四&#39;</title>
+    <link href="http://yoursite.com/2017/03/27/Python%E5%AD%A6%E4%B9%A0%E5%9B%9B/"/>
+    <id>http://yoursite.com/2017/03/27/Python学习四/</id>
+    <published>2017-03-27T12:49:22.000Z</published>
+    <updated>2017-03-27T13:26:51.794Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;IO编程&quot;&gt;&lt;a href=&quot;#IO编程&quot; class=&quot;headerlink&quot; title=&quot;IO编程&quot;&gt;&lt;/a&gt;IO编程&lt;/h2&gt;&lt;p&gt;1,文件读写取&lt;/p&gt;
+&lt;p&gt;在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).&lt;/p&gt;
+&lt;p&gt;使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOError,并指出错误出现的地方:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; f=open(&amp;apos;/Users/michael/notfound.txt&amp;apos;, &amp;apos;r&amp;apos;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Traceback (most recent call last):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;FileNotFoundError:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[Errno 2] No such file or directory: &amp;apos;/Users/michael/notfound.txt&amp;apos;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python学习(三)</title>
     <link href="http://yoursite.com/2017/03/25/Python%E5%AD%A6%E4%B9%A0-%E4%B8%89/"/>
     <id>http://yoursite.com/2017/03/25/Python学习-三/</id>
     <published>2017-03-25T15:27:11.000Z</published>
-    <updated>2017-03-25T16:08:23.381Z</updated>
+    <updated>2017-03-27T12:53:17.780Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;1,面型对象高级编程&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1,面型对象高级编程&lt;/p&gt;
 &lt;p&gt;数据封装,继承和多态只是面向对象编程的3个基础概念&lt;/p&gt;
 &lt;p&gt;2, __slots__ &lt;/p&gt;
 &lt;p&gt;定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,&lt;/p&gt;
