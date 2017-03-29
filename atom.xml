@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-27T13:33:09.262Z</updated>
+  <updated>2017-03-29T14:57:34.551Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,12 @@
     <link href="http://yoursite.com/2017/03/27/Python%E5%AD%A6%E4%B9%A0%E5%9B%9B/"/>
     <id>http://yoursite.com/2017/03/27/Python学习四/</id>
     <published>2017-03-27T12:49:22.000Z</published>
-    <updated>2017-03-27T13:33:09.262Z</updated>
+    <updated>2017-03-29T14:57:34.551Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;IO编程&quot;&gt;&lt;a href=&quot;#IO编程&quot; class=&quot;headerlink&quot; title=&quot;IO编程&quot;&gt;&lt;/a&gt;IO编程&lt;/h2&gt;&lt;p&gt;1,文件读写取&lt;/p&gt;
-&lt;p&gt;在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).&lt;/p&gt;
+&lt;h2 id=&quot;IO编程&quot;&gt;&lt;a href=&quot;#IO编程&quot; class=&quot;headerlink&quot; title=&quot;IO编程&quot;&gt;&lt;/a&gt;IO编程&lt;/h2&gt;&lt;h5 id=&quot;1-文件读写取&quot;&gt;&lt;a href=&quot;#1-文件读写取&quot; class=&quot;headerlink&quot; title=&quot;1,文件读写取&quot;&gt;&lt;/a&gt;1,文件读写取&lt;/h5&gt;&lt;p&gt;在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).&lt;/p&gt;
 &lt;p&gt;使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOError,并指出错误出现的地方:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; f=open(&amp;apos;/Users/michael/notfound.txt&amp;apos;, &amp;apos;r&amp;apos;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Traceback (most recent call last):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;FileNotFoundError:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[Errno 2] No such file or directory: &amp;apos;/Users/michael/notfound.txt&amp;apos;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
@@ -44,15 +43,13 @@
     <link href="http://yoursite.com/2017/03/25/Python%E5%AD%A6%E4%B9%A0%E4%B8%89/"/>
     <id>http://yoursite.com/2017/03/25/Python学习三/</id>
     <published>2017-03-25T15:27:11.000Z</published>
-    <updated>2017-03-27T12:53:17.780Z</updated>
+    <updated>2017-03-29T14:55:08.136Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;1,面型对象高级编程&lt;/p&gt;
-&lt;p&gt;数据封装,继承和多态只是面向对象编程的3个基础概念&lt;/p&gt;
-&lt;p&gt;2, __slots__ &lt;/p&gt;
-&lt;p&gt;定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,&lt;/p&gt;
+&lt;h5 id=&quot;1-面型对象高级编程&quot;&gt;&lt;a href=&quot;#1-面型对象高级编程&quot; class=&quot;headerlink&quot; title=&quot;1,面型对象高级编程&quot;&gt;&lt;/a&gt;1,面型对象高级编程&lt;/h5&gt;&lt;p&gt;数据封装,继承和多态只是面向对象编程的3个基础概念&lt;/p&gt;
+&lt;h5 id=&quot;2-slots&quot;&gt;&lt;a href=&quot;#2-slots&quot; class=&quot;headerlink&quot; title=&quot;2, __slots__&quot;&gt;&lt;/a&gt;2, __slots__&lt;/h5&gt;&lt;p&gt;定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;class Student(object):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	pass&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
@@ -69,15 +66,13 @@
     <link href="http://yoursite.com/2017/03/24/Python%E5%AD%A6%E4%B9%A0%E4%BA%8C/"/>
     <id>http://yoursite.com/2017/03/24/Python学习二/</id>
     <published>2017-03-24T08:36:34.000Z</published>
-    <updated>2017-03-24T10:25:14.570Z</updated>
+    <updated>2017-03-29T14:52:46.653Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;1,模块,&lt;/p&gt;
-&lt;p&gt;模块最大的好处就是提高了代码的可维护性,避免函数名和包名的冲突,&lt;/p&gt;
-&lt;p&gt;2,使用和安装第三方模块&lt;/p&gt;
-&lt;p&gt;先import导入,第三方模块,就能用到数据此模块当中的函数和属性&lt;/p&gt;
+      &lt;p&gt; &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;h5 id=&quot;1-模块&quot;&gt;&lt;a href=&quot;#1-模块&quot; class=&quot;headerlink&quot; title=&quot;1,模块&quot;&gt;&lt;/a&gt;1,模块&lt;/h5&gt;&lt;p&gt;模块最大的好处就是提高了代码的可维护性,避免函数名和包名的冲突,&lt;/p&gt;
+&lt;h5 id=&quot;2-使用和安装第三方模块&quot;&gt;&lt;a href=&quot;#2-使用和安装第三方模块&quot; class=&quot;headerlink&quot; title=&quot;2,使用和安装第三方模块&quot;&gt;&lt;/a&gt;2,使用和安装第三方模块&lt;/h5&gt;&lt;p&gt;先import导入,第三方模块,就能用到数据此模块当中的函数和属性&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://pypi.python.org/pypi&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
     
     </summary>
@@ -94,13 +89,12 @@
     <link href="http://yoursite.com/2017/03/12/Python%E5%AD%A6%E4%B9%A0%E4%B8%80/"/>
     <id>http://yoursite.com/2017/03/12/Python学习一/</id>
     <published>2017-03-12T15:41:15.000Z</published>
-    <updated>2017-03-27T13:33:47.998Z</updated>
+    <updated>2017-03-29T14:49:51.675Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;1,list:&lt;/p&gt;
-&lt;p&gt;Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.&lt;/p&gt;
+&lt;h5 id=&quot;1-list&quot;&gt;&lt;a href=&quot;#1-list&quot; class=&quot;headerlink&quot; title=&quot;1,list:&quot;&gt;&lt;/a&gt;1,list:&lt;/h5&gt;&lt;p&gt;Pytho内置的数据类型列表,list是一种可变有序集合,可以随时添加和删除其中的元素.可添加元素到末尾.&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; classmates.append(&amp;apos;Adam&amp;apos;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; classmates&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[&amp;apos;Michael&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Adam&amp;apos;]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;也可以指定索引号,添加到指定位置,&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; classmates.insert(1, &amp;apos;Jack&amp;apos;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; classmates&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[&amp;apos;Michael&amp;apos;, &amp;apos;Jack&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Adam&amp;apos;]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

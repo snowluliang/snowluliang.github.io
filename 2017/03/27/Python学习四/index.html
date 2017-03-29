@@ -88,24 +88,21 @@
 
 
 <meta name="description" content="学习网址:廖雪峰的Python教程
-IO编程1,文件读写取
-在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
-使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOE">
+IO编程1,文件读写取在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
+使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOEr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python学习(四)">
 <meta property="og:url" content="http://yoursite.com/2017/03/27/Python学习四/index.html">
 <meta property="og:site_name" content="Snow">
 <meta property="og:description" content="学习网址:廖雪峰的Python教程
-IO编程1,文件读写取
-在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
-使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOE">
-<meta property="og:updated_time" content="2017-03-27T13:33:09.262Z">
+IO编程1,文件读写取在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
+使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOEr">
+<meta property="og:updated_time" content="2017-03-29T14:57:34.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(四)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
-IO编程1,文件读写取
-在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
-使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOE">
+IO编程1,文件读写取在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
+使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOEr">
 
 
 
@@ -435,8 +432,7 @@ IO编程1,文件读写取
 
       
         <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">学习网址:廖雪峰的Python教程</a></p>
-<h2 id="IO编程"><a href="#IO编程" class="headerlink" title="IO编程"></a>IO编程</h2><p>1,文件读写取</p>
-<p>在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).</p>
+<h2 id="IO编程"><a href="#IO编程" class="headerlink" title="IO编程"></a>IO编程</h2><h5 id="1-文件读写取"><a href="#1-文件读写取" class="headerlink" title="1,文件读写取"></a>1,文件读写取</h5><p>在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).</p>
 <p>使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOError,并指出错误出现的地方:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; f=open(&apos;/Users/michael/notfound.txt&apos;, &apos;r&apos;)</div><div class="line">Traceback (most recent call last):</div><div class="line">File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;FileNotFoundError:</div><div class="line">[Errno 2] No such file or directory: &apos;/Users/michael/notfound.txt&apos;</div></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -455,23 +451,20 @@ IO编程1,文件读写取
 <p>如遇到<strong>编码不规范</strong>的文件,可能会有<strong>UnicodeDecodeError</strong>.</p>
 <p>文件中可能含有非法字符,在open()函数中黑可以传入一个errors参数,表示如果遇到异常如何处理,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; f = open(&apos;/Users/michael/gbk.txt&apos;, &apos;r&apos;, encoding=&apos;gbk&apos;, errors=&apos;ignore&apos;)</div></pre></td></tr></table></figure>
-<p>2,文件写入</p>
-<p>文件写入和文件读取类似,只不过在open()函数中的参数是’w’和’wb’,用来读取文本文件和二进制文件</p>
+<h5 id="2-文件写入"><a href="#2-文件写入" class="headerlink" title="2,文件写入"></a>2,文件写入</h5><p>文件写入和文件读取类似,只不过在open()函数中的参数是’w’和’wb’,用来读取文本文件和二进制文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; f = open(&apos;/Users/michael/test.txt&apos;, &apos;w&apos;)</div><div class="line">&gt;&gt;&gt; f.write(&apos;Hello, world!&apos;)</div><div class="line">&gt;&gt;&gt; f.close()</div></pre></td></tr></table></figure>
 <p>用with语句最保险:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">with open(&apos;/Users/michael/test.txt&apos;, &apos;w&apos;) as f: </div><div class="line">	f.write(&apos;Hello, world!&apos;)</div></pre></td></tr></table></figure>
 <p>反复调用write()方法,最重要的是还要调用close()方法,这样才能保证,系统把数据全部写入到指定文件中,如果要指定编码类型,只需要在open()函数中传入指定的的编码就可以了.</p>
-<p>3,StringIO,是在内存中读写str:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from io import StringIO</div><div class="line">&gt;&gt;&gt; f = StringIO()</div><div class="line">&gt;&gt;&gt; f.write(&apos;hello&apos;)</div><div class="line">5			#字符个数</div><div class="line">&gt;&gt;&gt; f.write(&apos; &apos;)</div><div class="line">1</div><div class="line">&gt;&gt;&gt; f.write(&apos;world!&apos;)</div><div class="line">6</div><div class="line">&gt;&gt;&gt; print(f.getvalue())</div><div class="line">hello world!</div></pre></td></tr></table></figure>
+<h5 id="3-StringIO"><a href="#3-StringIO" class="headerlink" title="3,StringIO"></a>3,StringIO</h5><h5 id="是在内存中读写str"><a href="#是在内存中读写str" class="headerlink" title="是在内存中读写str:"></a>是在内存中读写str:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from io import StringIO</div><div class="line">&gt;&gt;&gt; f = StringIO()</div><div class="line">&gt;&gt;&gt; f.write(&apos;hello&apos;)</div><div class="line">5			#字符个数</div><div class="line">&gt;&gt;&gt; f.write(&apos; &apos;)</div><div class="line">1</div><div class="line">&gt;&gt;&gt; f.write(&apos;world!&apos;)</div><div class="line">6</div><div class="line">&gt;&gt;&gt; print(f.getvalue())</div><div class="line">hello world!</div></pre></td></tr></table></figure>
 <p>getvalue()是用于获取写入后的字符串.</p>
 <p>读取StringIO和读取文件类似</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from io import StringIO</div><div class="line">&gt;&gt;&gt; f = StringIO(&apos;Hello!\nHi!\nGoodbye!&apos;)</div><div class="line">&gt;&gt;&gt; while True:</div><div class="line">...     s = f.readline()</div><div class="line">...     if s == &apos;&apos;:</div><div class="line">...         break</div><div class="line">...     print(s.strip())</div><div class="line">...</div><div class="line">Hello!</div><div class="line">Hi!</div><div class="line">Goodbye!</div></pre></td></tr></table></figure>
-<p>4,BytesIO,用于读写二进制数据.</p>
+<h5 id="4-BytesIO"><a href="#4-BytesIO" class="headerlink" title="4,BytesIO"></a>4,BytesIO</h5><p>用于读写二进制数据.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from io import BytesIO</div><div class="line">&gt;&gt;&gt; f = BytesIO()</div><div class="line">&gt;&gt;&gt; f.write(&apos;中文&apos;.encode(&apos;utf-8&apos;))6</div><div class="line">&gt;&gt;&gt; print(f.getvalue())</div><div class="line">b&apos;\xe4\xb8\xad\xe6\x96\x87&apos;</div></pre></td></tr></table></figure>
 <p>用BytesIO写入的不是str,而是经过编码后的byte字节,读取类似StringIO,先获得BytesIO的对象,进行读取:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from io import BytesIO</div><div class="line">&gt;&gt;&gt; f = BytesIO(b&apos;\xe4\xb8\xad\xe6\x96\x87&apos;)</div><div class="line">&gt;&gt;&gt; f.read()</div><div class="line">b&apos;\xe4\xb8\xad\xe6\x96\x87&apos;</div></pre></td></tr></table></figure>
-<p>5,操作文件和目录</p>
-<p>在Python中操作文件和目录的命令都在os模块和os.path模块当中</p>
+<h5 id="5-操作文件和目录"><a href="#5-操作文件和目录" class="headerlink" title="5,操作文件和目录"></a>5,操作文件和目录</h5><p>在Python中操作文件和目录的命令都在os模块和os.path模块当中</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import os</div><div class="line">&gt;&gt;&gt; os.name		</div><div class="line">&apos;nt&apos;</div></pre></td></tr></table></figure>
 <p>操作系统类型,nt 代表Windows,还有POSIX类型,代表Linux,Unix,或者MacOs.</p>
 <p>环境变量:</p>
@@ -496,10 +489,9 @@ IO编程1,文件读写取
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; [x for x in os.listdir(&apos;.&apos;) if os.path.isdir(x)]</div><div class="line">[&apos;DLLs&apos;, &apos;Doc&apos;, &apos;include&apos;, &apos;Lib&apos;, &apos;libs&apos;, &apos;Scripts&apos;, &apos;tcl&apos;, &apos;Tools&apos;]</div></pre></td></tr></table></figure>
 <p>列出所有的.py文件:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import os</div><div class="line">&gt;&gt;&gt; [x for x in os.listdir(&apos;.&apos;) if os.path.isfile(x) and os.path.splitext(x)[1]==&apos;.py&apos;]</div><div class="line">[&apos;break.py&apos;, &apos;if.py&apos;, &apos;learning.py&apos;, &apos;secret.py&apos;, &apos;sum.py&apos;, &apos;turtle.py&apos;]</div></pre></td></tr></table></figure>
-<p>6,序列化</p>
-<p>把变量从内存中变成可存储或传输的过程称之为序列化,在Python中叫pickling,序列化之后,就可以把序列化后的内容写入磁盘,或者通过网络传输到别的机器上.</p>
+<h5 id="6-序列化"><a href="#6-序列化" class="headerlink" title="6,序列化"></a>6,序列化</h5><p>把变量从内存中变成可存储或传输的过程称之为序列化,在Python中叫pickling,序列化之后,就可以把序列化后的内容写入磁盘,或者通过网络传输到别的机器上.</p>
 <p>反过来,把序列化之后的对象读到内存中,称为反序列化,unpickling.</p>
-<p>pickle模块实现序列化:</p>
+<h6 id="pickle模块"><a href="#pickle模块" class="headerlink" title="pickle模块"></a>pickle模块</h6><p>实现序列化:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import pickle</div><div class="line">&gt;&gt;&gt; d = dict(name=&apos;Snow&apos;,age=20,score=88)</div><div class="line">&gt;&gt;&gt; pickle.dumps(d)</div><div class="line">b&apos;\x80\x03&#125;q\x00(X\x04\x00\x00\x00nameq\x01X\x04\x00\x00\x00Snowq\x02X\x05\x00\x00\x00scoreq\x03KXX\x03\x00\x00\x00ageq\x04K\x14u.&apos;</div></pre></td></tr></table></figure>
 <p>pickle.dumps()方法可以把任意对象序列化成一个bytes,然后,就可以把bytes写入文件,或者,用pickle.dump()直接把对象序列化后写入一个file-like-Object:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import pickle</div><div class="line">&gt;&gt;&gt; d = dict(name=&apos;snow&apos;,age =22,sorce=90)</div><div class="line">&gt;&gt;&gt; f = open(&apos;33.txt&apos;,&apos;wb&apos;)</div><div class="line">&gt;&gt;&gt; pickle.dump(d,f)</div><div class="line">&gt;&gt;&gt; f.close</div><div class="line">&lt;built-in method close of _io.BufferedWriter object at 0x00000000011AA938&gt;</div></pre></td></tr></table></figure>
@@ -508,8 +500,7 @@ IO编程1,文件读写取
 <p>当把对象从磁盘中读到内存时候,可以先读取一个bytes,然后用pickle.loads()方法反序列化出对象,也可以用pickl.load()方法从一个file-like-Object中直接反序列化出对象,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; f = open(&apos;33.txt&apos;,&apos;rb&apos;)</div><div class="line">&gt;&gt;&gt; d = pickle.load(f)</div><div class="line">&gt;&gt;&gt; f.close()</div><div class="line">&gt;&gt;&gt; d</div><div class="line">&#123;&apos;age&apos;: 22, &apos;sorce&apos;: 90, &apos;name&apos;: &apos;snow&apos;&#125;</div></pre></td></tr></table></figure>
 <p>pickle只能用于python,不同版本的互不兼容,只能用pickle存储一些不太重要的信息.</p>
-<p>JSON</p>
-<p>要在不同编程语言之间传递对象,就要把对象序列化为标准格式,JSON表示的是一个字符串,可以被所有语言读取,可以方便的存储到磁盘或者通过网络传输,可以直接在Web页面读取.</p>
+<h6 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h6><p>要在不同编程语言之间传递对象,就要把对象序列化为标准格式,JSON表示的是一个字符串,可以被所有语言读取,可以方便的存储到磁盘或者通过网络传输,可以直接在Web页面读取.</p>
 <table>
 <thead>
 <tr>
@@ -793,7 +784,7 @@ IO编程1,文件读写取
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#IO编程"><span class="nav-number">1.</span> <span class="nav-text">IO编程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#IO编程"><span class="nav-number">1.</span> <span class="nav-text">IO编程</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-文件读写取"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1,文件读写取</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-文件写入"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2,文件写入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-StringIO"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3,StringIO</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#是在内存中读写str"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">是在内存中读写str:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-BytesIO"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">4,BytesIO</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-操作文件和目录"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">5,操作文件和目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-序列化"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">6,序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#pickle模块"><span class="nav-number">1.0.0.7.1.</span> <span class="nav-text">pickle模块</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#JSON"><span class="nav-number">1.0.0.7.2.</span> <span class="nav-text">JSON</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
