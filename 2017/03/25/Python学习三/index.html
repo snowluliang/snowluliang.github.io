@@ -88,23 +88,23 @@
 
 
 <meta name="description" content="学习网址:廖雪峰的Python教程
-1,面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
-2, __slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
+面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
+__slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
 12class Student(object):	pass">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python学习(三)">
 <meta property="og:url" content="http://yoursite.com/2017/03/25/Python学习三/index.html">
 <meta property="og:site_name" content="Snow">
 <meta property="og:description" content="学习网址:廖雪峰的Python教程
-1,面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
-2, __slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
+面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
+__slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
 12class Student(object):	pass">
-<meta property="og:updated_time" content="2017-03-29T14:55:08.136Z">
+<meta property="og:updated_time" content="2017-03-29T15:35:03.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(三)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
-1,面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
-2, __slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
+面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
+__slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
 12class Student(object):	pass">
 
 
@@ -435,8 +435,8 @@
 
       
         <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">学习网址:廖雪峰的Python教程</a></p>
-<h5 id="1-面型对象高级编程"><a href="#1-面型对象高级编程" class="headerlink" title="1,面型对象高级编程"></a>1,面型对象高级编程</h5><p>数据封装,继承和多态只是面向对象编程的3个基础概念</p>
-<h5 id="2-slots"><a href="#2-slots" class="headerlink" title="2, __slots__"></a>2, __slots__</h5><p>定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,</p>
+<h5 id="面型对象高级编程"><a href="#面型对象高级编程" class="headerlink" title="面型对象高级编程"></a>面型对象高级编程</h5><p>数据封装,继承和多态只是面向对象编程的3个基础概念</p>
+<h5 id="slots"><a href="#slots" class="headerlink" title="__slots__"></a>__slots__</h5><p>定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">	pass</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>创建实例,绑定一个属性值:</p>
@@ -448,20 +448,20 @@
 <p>这样,除了name和age属性之外的属性,都不可以添加了,会报错</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; s = Student() # 创建新的实例</div><div class="line">&gt;&gt;&gt; s.name = &apos;Michael&apos; # 绑定属性&apos;name&apos;</div><div class="line">&gt;&gt;&gt; s.age = 25 # 绑定属性&apos;age&apos;</div><div class="line">&gt;&gt;&gt; s.score = 99 # 绑定属性</div><div class="line">&apos;score&apos;Traceback (most recent call last):</div><div class="line">File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;AttributeError: </div><div class="line">&apos;Student&apos; object has no attribute &apos;score&apos;</div></pre></td></tr></table></figure>
 <p>使用 __slots__ 仅对当前实例有效,对其子类则没有效果,除非在子类中定义 __slots__ 方法</p>
-<h5 id="3-property"><a href="#3-property" class="headerlink" title="3,@property"></a>3,@property</h5><p>@property就是可以让实例的方法当做属性来用,例如:给Screen对象加上width和height属性,以及一个只读属性的resolution,</p>
+<h5 id="property"><a href="#property" class="headerlink" title="@property"></a>@property</h5><p>@property就是可以让实例的方法当做属性来用,例如:给Screen对象加上width和height属性,以及一个只读属性的resolution,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">class Screen(object):</div><div class="line">	@property				#设置getter方法</div><div class="line">	def width(self):</div><div class="line">		return self._width</div><div class="line"></div><div class="line">	@width.setter			#设置setter方法</div><div class="line">	def width(self,value):</div><div class="line">		self._width = value</div><div class="line">	</div><div class="line">	@property				#设置getter方法</div><div class="line">	def height(self):</div><div class="line">		return self._height</div><div class="line"></div><div class="line">	@height.setter			#设置setter方法</div><div class="line">	def height(self,value):</div><div class="line">		self._height = value</div><div class="line"></div><div class="line">	@property				#没有setter方法,只读属性,通过计算出来的</div><div class="line">	def resolution(self):</div><div class="line">		return self.width*self.height</div></pre></td></tr></table></figure>
 <p>测试结果:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">s = Screen()</div><div class="line">s.width = 1024  #这里就相当于s.set_width</div><div class="line">s.height = 768  #这里就相当于s.set_height</div><div class="line">print(s.resolution) </div><div class="line">786432</div></pre></td></tr></table></figure>
-<h5 id="4-多重继承"><a href="#4-多重继承" class="headerlink" title="4,多重继承"></a>4,多重继承</h5><p>Python允许使用多重继承,例如:狗是一种会跑的,食肉的,哺乳型动物,就可以继承自定义的</p>
+<h5 id="多重继承"><a href="#多重继承" class="headerlink" title="多重继承"></a>多重继承</h5><p>Python允许使用多重继承,例如:狗是一种会跑的,食肉的,哺乳型动物,就可以继承自定义的</p>
 <p>会跑的动物(Runnable),食肉的(Carnivorous),哺乳型(Mammal),动物(Animal)…</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">class Dog(Mammal,Animal,Carnivorous):</div><div class="line">	pass</div></pre></td></tr></table></figure>
 <p>这种模式叫做<strong>MixIn</strong>,目的是为了给一个类增加多个功能,在设计类的时候,<strong>优先考虑</strong>通过多重继承来组合多个<strong>MixIn</strong>的功能,而不是设计复杂层次的继承关系,</p>
-<h5 id="5-Enum枚举类"><a href="#5-Enum枚举类" class="headerlink" title="5,Enum枚举类"></a>5,Enum枚举类</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from enum import Enum, unique</div><div class="line">@unique</div><div class="line">class Weekday(Enum):</div><div class="line">	Sun = 0  # Sun的value被设定为0   </div><div class="line">	Mon = 1   </div><div class="line">	Tue = 2   </div><div class="line">	Wed = 3    </div><div class="line">	Thu = 4  </div><div class="line">	Fri = 5 </div><div class="line">	Sat = 6</div></pre></td></tr></table></figure>
+<h5 id="Enum枚举类"><a href="#Enum枚举类" class="headerlink" title="Enum枚举类"></a>Enum枚举类</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from enum import Enum, unique</div><div class="line">@unique</div><div class="line">class Weekday(Enum):</div><div class="line">	Sun = 0  # Sun的value被设定为0   </div><div class="line">	Mon = 1   </div><div class="line">	Tue = 2   </div><div class="line">	Wed = 3    </div><div class="line">	Thu = 4  </div><div class="line">	Fri = 5 </div><div class="line">	Sat = 6</div></pre></td></tr></table></figure>
 <p>@unique用来检查有没有重复值</p>
 <p>访问枚举类型</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(Weekday.Tue)</div><div class="line">Weekday.Tue</div><div class="line">&gt;&gt;&gt; print(Weekday[&apos;Tue&apos;])</div><div class="line">Weekday.Tue</div><div class="line">&gt;&gt;&gt; print(Weekday.Tue.value)</div><div class="line">2</div><div class="line">&gt;&gt;&gt; print(Weekday(1))</div><div class="line">Weekday.Mon</div></pre></td></tr></table></figure>
 <p>可以根据枚举名称引用常量,也可以用value的值获取枚举常量</p>
-<h5 id="6-元类-metalclass"><a href="#6-元类-metalclass" class="headerlink" title="6,元类(metalclass)"></a>6,元类(metalclass)</h5><p>动态语言在函数和类的定义过程中,不是编译时定义的 ,而是运行时动态创建的,</p>
+<h5 id="元类-metalclass"><a href="#元类-metalclass" class="headerlink" title="元类(metalclass)"></a>元类(metalclass)</h5><p>动态语言在函数和类的定义过程中,不是编译时定义的 ,而是运行时动态创建的,</p>
 <p>当我们需要创建一个实例时,首先要先定义一个类,然后在创建类的实例,所以顺序就是 –&gt;创建类–&gt;创建实例,</p>
 <p>但是创建类的时候呢?这是就是先创建metalclass,在创建类,在创建实例,顺序就是–&gt;创建metalclass–&gt;创建类–&gt;创建类的实例</p>
 <p>可以理解为,类就是metalclass的实例,</p>
@@ -469,7 +469,7 @@
 <p>②对类进行修改</p>
 <p>③返回修改后的类</p>
 <p><a href="http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python" target="_blank" rel="external">详细解释</a></p>
-<h5 id="7-错误-调试-测试"><a href="#7-错误-调试-测试" class="headerlink" title="7,错误,调试,测试"></a>7,错误,调试,测试</h5><h6 id="①-错误处理"><a href="#①-错误处理" class="headerlink" title="①,错误处理"></a>①,错误处理</h6><p><strong>try…except…finally…</strong>错误处理机制</p>
+<h5 id="错误-调试-测试"><a href="#错误-调试-测试" class="headerlink" title="错误,调试,测试"></a>错误,调试,测试</h5><h6 id="①-错误处理"><a href="#①-错误处理" class="headerlink" title="①,错误处理"></a>①,错误处理</h6><p><strong>try…except…finally…</strong>错误处理机制</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">try:   </div><div class="line">	print(&apos;try...&apos;)   </div><div class="line">	r = 10 / 0   </div><div class="line">	print(&apos;result:&apos;, r)</div><div class="line">except ZeroDivisionError as e:</div><div class="line">	print(&apos;except:&apos;, e)</div><div class="line">finally:  </div><div class="line">	print(&apos;finally...&apos;)</div><div class="line">print(&apos;END&apos;)</div></pre></td></tr></table></figure>
 <p>当try执行代码块出错时候,后续代码将不执行,而是执行except语句中的代码,提示错误的出现,如果finally语句中有代码,再执行其语句中的代码,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">try...</div><div class="line">result: 5</div><div class="line">finally...</div><div class="line">END</div></pre></td></tr></table></figure>
@@ -760,7 +760,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-面型对象高级编程"><span class="nav-number">1.</span> <span class="nav-text">1,面型对象高级编程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-slots"><span class="nav-number">2.</span> <span class="nav-text">2, __slots__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-property"><span class="nav-number">3.</span> <span class="nav-text">3,@property</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-多重继承"><span class="nav-number">4.</span> <span class="nav-text">4,多重继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-Enum枚举类"><span class="nav-number">5.</span> <span class="nav-text">5,Enum枚举类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-元类-metalclass"><span class="nav-number">6.</span> <span class="nav-text">6,元类(metalclass)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-错误-调试-测试"><span class="nav-number">7.</span> <span class="nav-text">7,错误,调试,测试</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#①-错误处理"><span class="nav-number">7.1.</span> <span class="nav-text">①,错误处理</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#②调试"><span class="nav-number">7.2.</span> <span class="nav-text">②调试</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#③单元测试"><span class="nav-number">7.3.</span> <span class="nav-text">③单元测试</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#④文档测试"><span class="nav-number">7.4.</span> <span class="nav-text">④文档测试</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#面型对象高级编程"><span class="nav-number">1.</span> <span class="nav-text">面型对象高级编程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#slots"><span class="nav-number">2.</span> <span class="nav-text">__slots__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#property"><span class="nav-number">3.</span> <span class="nav-text">@property</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多重继承"><span class="nav-number">4.</span> <span class="nav-text">多重继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Enum枚举类"><span class="nav-number">5.</span> <span class="nav-text">Enum枚举类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#元类-metalclass"><span class="nav-number">6.</span> <span class="nav-text">元类(metalclass)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#错误-调试-测试"><span class="nav-number">7.</span> <span class="nav-text">错误,调试,测试</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#①-错误处理"><span class="nav-number">7.1.</span> <span class="nav-text">①,错误处理</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#②调试"><span class="nav-number">7.2.</span> <span class="nav-text">②调试</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#③单元测试"><span class="nav-number">7.3.</span> <span class="nav-text">③单元测试</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#④文档测试"><span class="nav-number">7.4.</span> <span class="nav-text">④文档测试</span></a></li></ol></li></ol></div>
             
 
           </div>
