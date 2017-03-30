@@ -97,7 +97,7 @@ IO编程文件读写取在磁盘上读写文件的功能都是由操作系统提
 <meta property="og:description" content="学习网址:廖雪峰的Python教程
 IO编程文件读写取在磁盘上读写文件的功能都是由操作系统提供的,现代操作系统不允许一般的程序直接操作磁盘,读写文件就是请求操作系统打开一个文件对象,然后通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入文件对象(写文件).
 使用Python内置的open()函数,传入文件路径名和标示符,就能打开一个文件,如果文件不存在,会抛出一个IOErro">
-<meta property="og:updated_time" content="2017-03-29T15:35:34.908Z">
+<meta property="og:updated_time" content="2017-03-30T15:04:33.503Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(四)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
@@ -542,6 +542,7 @@ IO编程文件读写取在磁盘上读写文件的功能都是由操作系统提
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import json</div><div class="line">&gt;&gt;&gt; json_str = &apos;&#123;&quot;age&quot;: 22, &quot;sorce&quot;: 90, &quot;name&quot;: &quot;snow&quot;&#125;&apos;</div><div class="line">&gt;&gt;&gt; json.loads(json_str)</div><div class="line">&#123;&apos;name&apos;: &apos;snow&apos;, &apos;age&apos;: 22, &apos;sorce&apos;: 90&#125;</div></pre></td></tr></table></figure>
 <p>JSON标准规定JSON编码是UTF-8.</p>
 <p>Python语言序列化的模块是pickle,想要把序列化更通用,更符合web标准,就可以用JSON.</p>
+<hr>
 
       
     </div>

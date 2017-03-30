@@ -99,7 +99,7 @@ __slots__定义一个Class后,创建一个class实例后,可以给实例绑定�
 面型对象高级编程数据封装,继承和多态只是面向对象编程的3个基础概念
 __slots__定义一个Class后,创建一个class实例后,可以给实例绑定任何属性和方法,动态语言的灵活性,
 12class Student(object):	pass">
-<meta property="og:updated_time" content="2017-03-29T15:35:03.975Z">
+<meta property="og:updated_time" content="2017-03-30T15:04:55.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(三)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
@@ -510,7 +510,6 @@ __slots__定义一个Class后,创建一个class实例后,可以给实例绑定�
 <h6 id="③单元测试"><a href="#③单元测试" class="headerlink" title="③单元测试"></a>③单元测试</h6><p>单元测试时对一个类,一个函数或者一个模块正确性检测的测试工作,就是确保一个程序模块的行为符合我们设计的测试用例,在将来进行修改时候,极大可能保证此模块仍然是正确的</p>
 <h6 id="④文档测试"><a href="#④文档测试" class="headerlink" title="④文档测试"></a>④文档测试</h6><p>Python内置的 文档测试(doctest) 可以抽取文档中的代码直接运行</p>
 <p>doctest严格按照Python交互式命令行的输入和输出来判断测试结果是否正确</p>
-<hr>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">def fact(n):    </div><div class="line">&apos;&apos;&apos;</div><div class="line">&gt;&gt;&gt; fact(1)</div><div class="line">1</div><div class="line">&gt;&gt;&gt; fact(2)</div><div class="line">2</div><div class="line">&gt;&gt;&gt; fact(-1)</div><div class="line">Traceback (most recent call last):</div><div class="line">ValueError</div><div class="line"> &apos;&apos;&apos;    </div><div class="line">	if n &lt; 1: </div><div class="line">		raise ValueError()  </div><div class="line">	if n == 1:     </div><div class="line">		return 1  </div><div class="line">	return n * fact(n - 1)</div><div class="line"></div><div class="line">if__name__ == &apos;__main__&apos;:  </div><div class="line">	import doctest  </div><div class="line">	doctest.testmod()</div></pre></td></tr></table></figure>
 <hr>
 
