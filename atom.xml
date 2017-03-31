@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-31T14:56:35.127Z</updated>
+  <updated>2017-03-31T14:59:58.192Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,15 @@
     <link href="http://yoursite.com/2017/03/31/Python%E5%AD%A6%E4%B9%A0%E4%BA%94/"/>
     <id>http://yoursite.com/2017/03/31/Python学习五/</id>
     <published>2017-03-31T13:59:52.000Z</published>
-    <updated>2017-03-31T14:56:35.127Z</updated>
+    <updated>2017-03-31T14:59:58.192Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;学习网址:廖雪峰的Pyth
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;多进程和多线程&quot;&gt;&lt;a href=&quot;#多进程和多线程&quot; class=&quot;headerlink&quot; title=&quot;多进程和多线程&quot;&gt;&lt;/a&gt;多进程和多线程&lt;/h4&gt;&lt;p&gt;线程是最小的执行单元,真正的多进程是需要多核CPU支持才行,单核CPU之所以能执行多进程,是因为CPU的执行速度非常之快,在多个进程中交替执行,看起来像是多进程,实际上还是单进程.进程中包含有许多线程,像word之类的编辑文档,既需要记录用户输入的内容,又需要随时保存,打印等服务.&lt;/p&gt;
+&lt;h4 id=&quot;多进程&quot;&gt;&lt;a href=&quot;#多进程&quot; class=&quot;headerlink&quot; title=&quot;多进程&quot;&gt;&lt;/a&gt;多进程&lt;/h4&gt;&lt;p&gt;Python中os模块封装了常见的系统调用,包括fork()方法,可以在Python中创建子进程,但是在Windows下,调用fork() 方法时,却没有…&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; import os&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; print(&amp;apos;Process (%s) start...&amp;apos; % os.getpid())&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Process (7088) start...&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; pid = os.fork()&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Traceback (most recent call last):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;AttributeError: module &amp;apos;os&amp;apos; has no attribute &amp;apos;fork&amp;apos;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Windows上就没有办法编写多进程的程序了嘛?当然不是.&lt;/p&gt;
     
     </summary>
     

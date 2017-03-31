@@ -97,7 +97,7 @@
 <meta property="og:description" content="学习网址:廖雪峰的Python教程
 多进程和多线程线程是最小的执行单元,真正的多进程是需要多核CPU支持才行,单核CPU之所以能执行多进程,是因为CPU的执行速度非常之快,在多个进程中交替执行,看起来像是多进程,实际上还是单进程.进程中包含有许多线程,像word之类的编辑文档,既需要记录用户输入的内容,又需要随时保存,打印等服务.
 多进程Python中os模块封装了常见的系统调用,包括fork()">
-<meta property="og:updated_time" content="2017-03-31T14:56:35.127Z">
+<meta property="og:updated_time" content="2017-03-31T14:59:58.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(五)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
@@ -436,6 +436,7 @@
 <h4 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h4><p>Python中os模块封装了常见的系统调用,包括fork()方法,可以在Python中创建子进程,但是在Windows下,调用fork() 方法时,却没有…</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import os</div><div class="line">&gt;&gt;&gt; print(&apos;Process (%s) start...&apos; % os.getpid())</div><div class="line">Process (7088) start...</div><div class="line">&gt;&gt;&gt; pid = os.fork()</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</div><div class="line">AttributeError: module &apos;os&apos; has no attribute &apos;fork&apos;</div></pre></td></tr></table></figure>
 <p>Windows上就没有办法编写多进程的程序了嘛?当然不是.</p>
+<a id="more"></a>
 <p>因为Python是跨平台的,<strong>multiprocessing</strong>模块就是跨平台的多进程模块.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">from multiprocessing import Process</div><div class="line">import os</div><div class="line"># 子进程要执行的代码</div><div class="line">def run_proc(name): </div><div class="line">	print(&apos;Run child process %s (%s)...&apos; % (name, os.getpid()))</div><div class="line">if name==&apos;main&apos;:  </div><div class="line">    print(&apos;Parent process %s.&apos; % os.getpid()) </div><div class="line">    p = Process(target=run_proc, args=(&apos;test&apos;,)) </div><div class="line">    print(&apos;Child process will start.&apos;) </div><div class="line">    p.start()   </div><div class="line">    p.join() </div><div class="line">    print(&apos;Child process end.&apos;)</div></pre></td></tr></table></figure>
 <p>执行结果:</p>
