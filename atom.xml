@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-01T01:54:27.210Z</updated>
+  <updated>2017-04-01T11:38:54.375Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习(六)</title>
+    <link href="http://yoursite.com/2017/04/01/Python%E5%AD%A6%E4%B9%A0%E5%85%AD/"/>
+    <id>http://yoursite.com/2017/04/01/Python学习六/</id>
+    <published>2017-04-01T09:57:57.000Z</published>
+    <updated>2017-04-01T11:38:54.375Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;进程VS线程&quot;&gt;&lt;a href=&quot;#进程VS线程&quot; class=&quot;headerlink&quot; title=&quot;进程VS线程&quot;&gt;&lt;/a&gt;进程VS线程&lt;/h3&gt;&lt;p&gt;多进程和多线程是实现多任务最常用的两种方式.实现多任务,通常会设计Master-Worker模式,Master负责分配任务,worker负责执行任务.&lt;/p&gt;
+&lt;p&gt;多任务环境下,就是一个Master,多个Worker.&lt;/p&gt;
+&lt;p&gt;如果用多进程实现Master-Worker,那主线程就是Master,其他线程就是Worker.&lt;/p&gt;
+&lt;p&gt;如果用多线程实现Master-Worker,那主线程是Master,其他线程就是Worker.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多进程的优势:稳定性高,一个子进程崩溃了,也不会影响其他进程.(主进程崩溃了,其他进程也就挂掉了,由于主进程主要负责分配任务,所以崩溃的几率很低).&lt;/li&gt;
+&lt;li&gt;多进程的缺点:创建进程的代价大,在Windows下创建进程开销巨大.操作系统同时运行的进程数也是有限的,如果有上千个进程在运行,操作系统调度都有问题.&lt;/li&gt;
+&lt;li&gt;多线程的优势就是比多进程快一点,这个一点可以忽略不计.&lt;/li&gt;
+&lt;li&gt;最大的缺点就是,一旦一个线程挂掉了,可能会导致其他线程的崩溃.因为所有线程共享进程的内存.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在Windows系统下多线程的效率要比多进程要高.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习(五)</title>
