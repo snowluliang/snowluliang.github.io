@@ -100,7 +100,7 @@
 使用和安装第三方模块先import导入,第三方模块,就能用到数据此模块当中的函数和属性
 下载地址">
 <meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/tree.png">
-<meta property="og:updated_time" content="2017-03-30T15:05:10.829Z">
+<meta property="og:updated_time" content="2017-04-01T11:51:19.689Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习(二)">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
@@ -443,21 +443,21 @@
 <a id="more"></a>
 <h5 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h5><p>Object Oriented Programming 简称OOP,是一种程序设计思想,OOP把对象作为程序的基本单元,一个对象包含函数和操作函数的方法;</p>
 <h5 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h5><p>面向对象最重要的概念类(class)和实例(instance)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class Student(object):   </div><div class="line">	def init(self, name, score): </div><div class="line">        self.name = name      </div><div class="line">  		self.score = score</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">    def init(self, name, score): </div><div class="line">        self.name = name      </div><div class="line">        self.score = score</div></pre></td></tr></table></figure>
 <p>init 前后有两个下划线,第一个参数始终是self,</p>
 <h5 id="访问限制"><a href="#访问限制" class="headerlink" title="访问限制"></a>访问限制</h5><p>Class内部有属性和方法,外部可以直接用实例来操作类的属性和方法,隐藏了内部复杂的逻辑,</p>
 <p>如果不想让内部属性被外部访问,可以把属性名称前面加上两个下划线__,这样内部属性就变成了私有变量,外部不可访问;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">	def init(self, name, score): </div><div class="line">    	self.name = name      </div><div class="line">        self.score = score</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">    def init(self, name, score): </div><div class="line">        self.name = name      </div><div class="line">        self.score = score</div></pre></td></tr></table></figure>
 <p>如果需要对属性变量进行更改或取值,可以给类添加get和set方法,通过,get_name,set_sorce,进行修改;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">class Student(object): </div><div class="line">...</div><div class="line">	def get_name(self):      </div><div class="line">		return self.__name   </div><div class="line">	def set_score(self, score):     </div><div class="line">		if 0 &lt;= score &lt;= 100:          </div><div class="line">			self.__score = score    </div><div class="line">		else:       </div><div class="line">			raise ValueError(&apos;bad score&apos;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">class Student(object): </div><div class="line">def get_name(self):</div><div class="line">    return self.__name   </div><div class="line">def set_score(self, score):     </div><div class="line">    if 0 &lt;= score &lt;= 100:          </div><div class="line">        self.__score = score    </div><div class="line">    else:       </div><div class="line">        raise ValueError(&apos;bad score&apos;)</div></pre></td></tr></table></figure>
 <p>其次,  __XXX__  类似这样前后带有双下划线的变量,不是私有变量,可以随意访问. _XXX 带有一个下划线的变量,视为私有变量,不要轻易访问;</p>
 <p>带有双下划线的私有变量一定要从外部访问嘛?</p>
 <p>不一定,带有双下划线的私有变量,Python解释器,其实把, __name 变量给成了_Student__name,  所以,还是可以通过,_Student__name 的形式进行访问;</p>
 <p>但是,强烈建议不要这么做.因为不同版本的Python解释器可能会把 __name 改成不同的变量;</p>
 <h5 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a>继承和多态</h5><p>继承最大的好处就是,子类可以拥有父类的全部方法和功能</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Animal(object): </div><div class="line">	def run(self):</div><div class="line">		print(&apos;Animal is running...&apos;)</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Dog(Animal):</div><div class="line">	def run(self):   </div><div class="line">		print(&apos;Dog is running...&apos;)</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Cat(Animal):</div><div class="line">	def run(self):  </div><div class="line">		print(&apos;Cat is running...&apos;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Animal(object): </div><div class="line">    def run(self):</div><div class="line">        print(&apos;Animal is running...&apos;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Dog(Animal):</div><div class="line">    def run(self):   </div><div class="line">        print(&apos;Dog is running...&apos;)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class Cat(Animal):</div><div class="line">    def run(self):  </div><div class="line">        print(&apos;Cat is running...&apos;)</div></pre></td></tr></table></figure>
 <p>Animal就是Dog,Cat的父类,Dog,Cat就是Animal的子类,并拥有父类的全部方法</p>
 <p>子类和父类中拥有相同run()方法,说明子类run()方法覆盖了父类run()的方法,代码运行时候就会调用</p>
 <p>子类的run()方法,这就是继承的另一个好处:多态</p>

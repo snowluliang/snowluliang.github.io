@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/03/24/Python%E5%AD%A6%E4%B9%A0%E4%BA%8C/</loc>
+    
+    <lastmod>2017-04-01T11:51:19.689Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/04/01/Python%E5%AD%A6%E4%B9%A0%E5%85%AD/</loc>
     
     <lastmod>2017-04-01T11:44:42.363Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2017/03/12/Python%E5%AD%A6%E4%B9%A0%E4%B8%80/</loc>
     
     <lastmod>2017-03-30T15:05:21.040Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/24/Python%E5%AD%A6%E4%B9%A0%E4%BA%8C/</loc>
-    
-    <lastmod>2017-03-30T15:05:10.829Z</lastmod>
     
   </url>
   
