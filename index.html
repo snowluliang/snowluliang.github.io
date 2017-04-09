@@ -322,6 +322,213 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/09/Python学习七/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="snowluliang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/boy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Snow">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/09/Python学习七/" itemprop="url">
+                  Python学习七
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-09T14:20:12+08:00">
+                2017-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/09/Python学习七/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/04/09/Python学习七/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">学习网址:廖雪峰的Python教程</a></p>
+<h2 id="常用的内建模块"><a href="#常用的内建模块" class="headerlink" title="常用的内建模块"></a>常用的内建模块</h2><p>Python内置了许多有用的模块,无需额外安装和配置,可以直接使用.</p>
+<h3 id="datetime"><a href="#datetime" class="headerlink" title="datetime"></a>datetime</h3><p>它是Python处理如期和时间的标准库.</p>
+<p> 获取当前日期和时间:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; now = datetime.datetime()</div><div class="line">&gt;&gt;&gt; now = datetime.now()</div><div class="line">&gt;&gt;&gt; print(now)</div><div class="line">2017-04-06 16:35:16.378296</div><div class="line">&gt;&gt;&gt; print(type(now))</div><div class="line">&lt;class &apos;datetime.datetime&apos;&gt;</div></pre></td></tr></table></figure>
+<p>解释:<strong>datetime</strong>是一个模块,导入的是这个模块中的<strong>datetime类</strong>,如果仅仅是</p>
+<p>import datetime,需要使用全类名,datetime.datetime.</p>
+<p><strong>datetime.now()</strong>是当前的时间和日期,类型是datetime类型.</p>
+<p>获取指定的时间和日期:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; zd = datetime(2017,4,1,9,50)</div><div class="line">&gt;&gt;&gt; print(zd)</div><div class="line">2017-04-01 09:50:00</div></pre></td></tr></table></figure>
+<h4 id="datetime转换为timestamp"><a href="#datetime转换为timestamp" class="headerlink" title="datetime转换为timestamp"></a>datetime转换为timestamp</h4><p>首先,什么是<strong>timestamp</strong>?通常把1970年1月1日,00:00:00 UTC+00:00时区的时刻称为epoch time,记做0,<strong>把当前时间相对于epoch time的秒数,叫做timestamp.</strong></p>
+<p>直接调用timestamp()方法,就可以获取当前时间的timestamp:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; zd = datetime(2017,4,1,9,50)</div><div class="line">&gt;&gt;&gt; zd.timestamp()</div><div class="line">1491011400.0</div><div class="line">timestamp转为datetime:</div><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; time = 1491011400.0</div><div class="line">&gt;&gt;&gt; print(datetime.fromtimestamp(time))</div><div class="line">2017-04-01 09:50:00</div></pre></td></tr></table></figure>
+<p>timestamp是一个浮点数,没有时区的概念,<strong>datetime是有时区的</strong>,这里只是对时间进行转换.</p>
+<p>2017-04-01 09:50:00 实际上相当于 2017-04-01 09:50:00 UTC+8:00</p>
+<p>timestamp直接转换为UTC时区标准时间:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; time = 1491011400.0</div><div class="line">&gt;&gt;&gt; print(datetime.utcfromtimestamp(time))</div><div class="line">2017-04-01 01:50:00</div></pre></td></tr></table></figure>
+<p>本地时区为东8区,比UTC时区差了8小时.</p>
+<h4 id="str转换为datetime"><a href="#str转换为datetime" class="headerlink" title="str转换为datetime"></a>str转换为datetime</h4><p>将字符串类型的日期和时间,转换为datetime,调用datetime.strptime()方法和一个日期时间的格式化字符串:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; da = datetime.strptime(&apos;2022-4-1 13:28:30&apos;,&apos;%Y-%m-%d %H:%M:%S&apos;)</div><div class="line">&gt;&gt;&gt; print(da)</div><div class="line">2022-04-01 13:28:30</div></pre></td></tr></table></figure>
+<p>这个字符串规定了日期和时间的格式,<a href="https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior" target="_blank" rel="external">参考Python文档</a></p>
+<p>转化后的datetime是没有时区信息的.</p>
+<h4 id="datetime转化为str"><a href="#datetime转化为str" class="headerlink" title="datetime转化为str"></a>datetime转化为str</h4><p>将一个datetime对象转化为字符串,通过strftime()方法实现,和一个格式化日期和时间的字符串:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime</div><div class="line">&gt;&gt;&gt; da = datetime.strptime(&apos;2022-4-1 13:28:30&apos;,&apos;%Y-%m-%d %H:%M:%S&apos;)</div><div class="line">&gt;&gt;&gt; print(da.strftime(&apos;%a,%b %d %H:%M&apos;))</div><div class="line">Fri,Apr 01 13:28</div></pre></td></tr></table></figure>
+<h4 id="时间的加减计算"><a href="#时间的加减计算" class="headerlink" title="时间的加减计算"></a>时间的加减计算</h4><p>datetime加减计算,就是把datetime往后或向前计算,得到新的datetime,加减可以直接用 + 和 - 运算符,需要导入timedelta.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime,timedelta</div><div class="line">&gt;&gt;&gt; now = datetime.now()</div><div class="line">&gt;&gt;&gt; now</div><div class="line">datetime.datetime(2017, 4, 6, 18, 19, 44, 769642)</div><div class="line">&gt;&gt;&gt; now + timedelta(hours=10)</div><div class="line">datetime.datetime(2017, 4, 7, 4, 19, 44, 769642)</div><div class="line">&gt;&gt;&gt; now - timedelta(days = 2)</div><div class="line">datetime.datetime(2017, 4, 4, 18, 19, 44, 769642)</div><div class="line">&gt;&gt;&gt; now +timedelta(days=33,hours=12)</div><div class="line">datetime.datetime(2017, 5, 10, 6, 19, 44, 769642)</div></pre></td></tr></table></figure>
+<p>timedetla()方法可以算出,前后几天的日期和时间.</p>
+<h4 id="本地时间转换为UTC时间"><a href="#本地时间转换为UTC时间" class="headerlink" title="本地时间转换为UTC时间"></a>本地时间转换为UTC时间</h4><p>本地时间是指带有时区信息的时间,北京时间为UTC+8:00时区的时间,UTC时间是指UTC+0:00时区的时间.</p>
+<p>datetime类型有tzinfo时区属性,默认为None,无法区分这个datetime是哪个时区的时间,可以强行设置一个时区.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from datetime import datetime, timezone, timedelta</div><div class="line">&gt;&gt;&gt; tz = timezone(timedelta(hours=8))</div><div class="line">&gt;&gt;&gt; now = datetime.now()</div><div class="line">&gt;&gt;&gt; now</div><div class="line">datetime.datetime(2017, 4, 6, 18, 42, 9, 954572)</div><div class="line">&gt;&gt;&gt; ndt = now.replace(tzinfo=tz)</div><div class="line">&gt;&gt;&gt; ndt</div><div class="line">datetime.datetime(2017, 4, 6, 18, 42, 9, 954572, tzinfo=datetime.timezone(datetime.timedelta</div><div class="line">(0, 28800)))</div></pre></td></tr></table></figure>
+<h4 id="时区转化"><a href="#时区转化" class="headerlink" title="时区转化"></a>时区转化</h4><p>通过utcnow()拿到当前的UTC时间,转转换为任意时区时间:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; utc_da = datetime.utcnow().replace(tzinfo=timezone.utc)</div><div class="line">&gt;&gt;&gt; print(utc_da)</div><div class="line">2017-04-06 10:50:16.899424+00:00</div><div class="line">&gt;&gt;&gt; bd_da = utc_da.astimezone(timezone(timedelta(hours=8)))</div><div class="line">&gt;&gt;&gt; print(bd_da)</div><div class="line">2017-04-06 18:50:16.899424+08:00</div></pre></td></tr></table></figure>
+<p>通过带有时区的datetime,调用<strong>astimezone()</strong>方法,可以转换到任意时区.</p>
+<p>datetime表示的时间需要时区信息才能确定一个特定的时间,否则只能视为本地时间.</p>
+<p>要存储datetime的话,最好是将datetime转换为timestamp来存储,timestamp的值与时区没有关系.</p>
+<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><p>假设你获取了用户输入的日期和时间如2015-1-21 9:01:30，以及一个时区信息如UTC+5:00，均是str，请编写一个函数将其转换为timestamp：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">from datetime import datetime, timezone, timedelta</div><div class="line"></div><div class="line">def to_timestamp(dt_str,tz_str):</div><div class="line">    i = datetime.strptime(dt_str,&apos;%Y-%m-%d %H:%M:%S&apos;)</div><div class="line">    tz = tz_str[3:-3]</div><div class="line">    dt = i.replace(tzinfo=timezone(timedelta(hours=int(tz))))</div><div class="line">    return dt.timestamp()</div><div class="line">print(to_timestamp(&apos;2015-6-1 08:10:30&apos;, &apos;UTC+7:00&apos;))</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="collections"><a href="#collections" class="headerlink" title="collections"></a>collections</h3><p>是Python内置的集合模块,提供了一些集合类.</p>
+<h4 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h4><p>它是一个函数,用来创建自定义的tuple对象,规定了tuple元素的个数,并且可以用属性而不是索引来引用tuple的某个元素.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from collections import namedtuple</div><div class="line">&gt;&gt;&gt; Name = namedtuple(&apos;Name&apos;,[&apos;fn&apos;,&apos;ln&apos;])</div><div class="line">&gt;&gt;&gt; me = Name(&apos;snow&apos;,&apos;lu&apos;)</div><div class="line">&gt;&gt;&gt; me</div><div class="line">Name(fn=&apos;snow&apos;, ln=&apos;lu&apos;)</div><div class="line">&gt;&gt;&gt; me.fn    通过属性引用元素</div><div class="line">&apos;snow&apos;</div><div class="line">&gt;&gt;&gt; me.ln    通过属性引用元素</div><div class="line">&apos;lu&apos;</div></pre></td></tr></table></figure>
+<p>还可以验证创建的Name是不是tuple对象:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; isinstance(me,Name)</div><div class="line">True</div><div class="line">&gt;&gt;&gt; isinstance(me,tuple)</div><div class="line">True</div></pre></td></tr></table></figure>
+<h4 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h4><p>是为了高效实现插入和删除操作的双向列表,使用list存储数据时,由于list是线性存储,数据量大的时候,插入和删除的效率很低.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from collections import deque</div><div class="line">&gt;&gt;&gt; q = deque([&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;])</div><div class="line">&gt;&gt;&gt; q.append(&apos;x&apos;)</div><div class="line">&gt;&gt;&gt; q</div><div class="line">deque([&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;x&apos;])</div><div class="line">&gt;&gt;&gt; q.appendleft(&apos;o&apos;)</div><div class="line">&gt;&gt;&gt; q</div><div class="line">deque([&apos;o&apos;, &apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;x&apos;])</div><div class="line">&gt;&gt;&gt; q.popleft()</div><div class="line">&apos;o&apos;</div><div class="line">&gt;&gt;&gt; q</div><div class="line">deque([&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;x&apos;])</div></pre></td></tr></table></figure>
+<p>deque还支持<strong>appendleft()</strong>和<strong>popleft()</strong>方法,更方便的从开始位置插入和删除.</p>
+<h4 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h4><p>在使用defaultdict时候,如果key不存在,可以返回一个默认值,而使用dict时,如果key不存在,会报错KeyError.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from collections import defaultdict</div><div class="line">&gt;&gt;&gt; d = defaultdict(lambda:&apos;N/A&apos;)</div><div class="line">&gt;&gt;&gt; d[&apos;key&apos;] = &apos;abc&apos;</div><div class="line">&gt;&gt;&gt; d[&apos;key&apos;]</div><div class="line">&apos;abc&apos;</div><div class="line">&gt;&gt;&gt; d[&apos;x&apos;] = &apos;ssss&apos;</div><div class="line">&gt;&gt;&gt; d[&apos;x&apos;]</div><div class="line">&apos;ssss&apos;</div><div class="line">&gt;&gt;&gt; d[&apos;y&apos;]</div><div class="line">&apos;N/A&apos;</div></pre></td></tr></table></figure>
+<p>defaultdict和dict的区别就是如果key不存在就返回默认值,其他的和dict一样.</p>
+<h4 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h4><p>在使用dict时候,如果想要保持key的顺序,就可以使用OrderedDict.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from collections import OrderedDict</div><div class="line">&gt;&gt;&gt; d = dict([(&apos;a&apos;,2),(&apos;b&apos;,1),(&apos;c&apos;,4)])</div><div class="line">&gt;&gt;&gt; d</div><div class="line">&#123;&apos;c&apos;: 4, &apos;b&apos;: 1, &apos;a&apos;: 2&#125;</div><div class="line">&gt;&gt;&gt; od = OrderedDict([(&apos;a&apos;,2),(&apos;b&apos;,1),(&apos;c&apos;,4)])</div><div class="line">&gt;&gt;&gt; od</div><div class="line">OrderedDict([(&apos;a&apos;, 2), (&apos;b&apos;, 1), (&apos;c&apos;, 4)])</div><div class="line">&gt;&gt;&gt; oo = OrderedDict(d)</div><div class="line">&gt;&gt;&gt; oo</div><div class="line">OrderedDict([(&apos;c&apos;, 4), (&apos;b&apos;, 1), (&apos;a&apos;, 2)])</div></pre></td></tr></table></figure>
+<p>需要注意的是,OrderedDict的key<strong>是按照插入的顺序排列</strong>,不是key本身的顺序.</p>
+<p>OrderedDict可以实现<strong>先进先出</strong>的dict,当容量超出限制时,先删除最早插入的Key</p>
+<h4 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h4><p>它是一个简单的计数器,可以统计字符出现的个数:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from collections import Counter</div><div class="line">&gt;&gt;&gt; cc = Counter()</div><div class="line">&gt;&gt;&gt; for ch in &apos;language&apos;:</div><div class="line">...     cc[ch] = cc[ch]+1</div><div class="line">...</div><div class="line">&gt;&gt;&gt; cc</div><div class="line">Counter(&#123;&apos;g&apos;: 2, &apos;a&apos;: 2, &apos;n&apos;: 1, &apos;e&apos;: 1, &apos;l&apos;: 1, &apos;u&apos;: 1&#125;)</div></pre></td></tr></table></figure>
+<p>Counter是dict的一个子类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;isinstance(cc,dict)</div><div class="line">True</div></pre></td></tr></table></figure>
+<hr>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/01/Python学习六/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1735,160 +1942,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/28/article-tittle/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="snowluliang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/boy.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Snow">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/28/article-tittle/" itemprop="url">
-                  hello
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-28T23:49:57+08:00">
-                2017-02-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Exercise/" itemprop="url" rel="index">
-                    <span itemprop="name">Exercise</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/02/28/article-tittle/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/28/article-tittle/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>时间:2017年2月28号,23:52分创建.</p>
-<p>新的旅程刚刚开始,你要努力!</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
           
           </div>
@@ -1931,7 +1991,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-01T11:44:42.363Z</updated>
+  <updated>2017-04-09T06:37:07.945Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习七</title>
+    <link href="http://yoursite.com/2017/04/09/Python%E5%AD%A6%E4%B9%A0%E4%B8%83/"/>
+    <id>http://yoursite.com/2017/04/09/Python学习七/</id>
+    <published>2017-04-09T06:20:12.000Z</published>
+    <updated>2017-04-09T06:37:07.945Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;学习网址:廖雪峰的Pyth
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习(六)</title>
