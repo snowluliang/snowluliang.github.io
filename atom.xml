@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-18T08:23:18.694Z</updated>
+  <updated>2017-04-27T08:56:43.004Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习八</title>
+    <link href="http://yoursite.com/2017/04/18/Python%E5%AD%A6%E4%B9%A0%E5%85%AB/"/>
+    <id>http://yoursite.com/2017/04/18/Python学习八/</id>
+    <published>2017-04-18T08:52:38.000Z</published>
+    <updated>2017-04-27T08:56:43.004Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;struct模块&quot;&gt;&lt;a href=&quot;#struct模块&quot; class=&quot;headerlink&quot; title=&quot;struct模块&quot;&gt;&lt;/a&gt;struct模块&lt;/h3&gt;&lt;p&gt;struct模块是Python来解决bytes和其他二进制数据类型的转换.&lt;/p&gt;
+&lt;h4 id=&quot;pack函数&quot;&gt;&lt;a href=&quot;#pack函数&quot; class=&quot;headerlink&quot; title=&quot;pack函数&quot;&gt;&lt;/a&gt;pack函数&lt;/h4&gt;&lt;p&gt;struct的pack函数把任意数据类型变成bytes:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; import struct&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; struct.pack(&amp;apos;&amp;gt;I&amp;apos;, 10240099)b&amp;apos;\x00\x9c@c&amp;apos;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;pack的第一个参数是处理指令,”&lt;strong&gt;&amp;gt;I&lt;/strong&gt;“的意思是:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&gt;&lt;/strong&gt;表示字节顺序是big-endian,就是&lt;strong&gt;网络序&lt;/strong&gt;, &lt;strong&gt;I&lt;/strong&gt; 表示4字节无符号整数.&lt;/p&gt;
+&lt;p&gt;后面的参数个数要和处理指令一致.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习七</title>
