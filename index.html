@@ -430,34 +430,18 @@
 
       
         
-          
-            <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">学习网址:廖雪峰的Python教程</a></p>
-<h3 id="常用的第三方模块"><a href="#常用的第三方模块" class="headerlink" title="常用的第三方模块"></a>常用的第三方模块</h3><p>Python既有内建模块,还有大量的第三方模块,<a href="https://pypi.python.org/pypi" target="_blank" rel="external">模块网址</a>按需安装</p>
+          <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">学习网址:廖雪峰的Python教程</a></p>
+<h3 id="常用的第三方模块"><a href="#常用的第三方模块" class="headerlink" title="常用的第三方模块"></a>常用的第三方模块</h3><p>Python既有内建模块,还有大量的第三方模块,<a href="https://pypi.python.org/pypi">模块网址</a>按需安装</p>
 <h4 id="PIL"><a href="#PIL" class="headerlink" title="PIL"></a>PIL</h4><p>全称是: <strong>Python Imaging Library</strong> 是Python的图像处理标准库,功能强大且易用,仅支持到Python 2.7</p>
 <h4 id="Pillow"><a href="#Pillow" class="headerlink" title="Pillow"></a>Pillow</h4><p>支持最新Python3.X</p>
 <p>安装方式: pip install pillow</p>
-<p>操作缩放图像:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from PIL import Image</div><div class="line">&gt;&gt;&gt; i = Image.open(&apos;C:/Users/snow/Desktop/img/boy.jpg&apos;)</div><div class="line">&gt;&gt;&gt; w,h = i.size</div><div class="line">&gt;&gt;&gt; print(&apos;Image size: %s*%s&apos; % (w,h))</div><div class="line">Image size: 1080*1002</div><div class="line">&gt;&gt;&gt; i.thumbnail((w//2,h//2))</div><div class="line">&gt;&gt;&gt; print(&apos;Image size: %s*%s&apos; % (w//2,h//2))</div><div class="line">Image size: 540*501</div><div class="line">&gt;&gt;&gt; i.save(&apos;thumboy.jpg&apos;,&apos;jpeg&apos;)</div></pre></td></tr></table></figure>
-<p>图片模糊:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from PIL import Image,ImageFilter</div><div class="line">&gt;&gt;&gt; ii = Image.open(&apos;C:/Users/snow/Desktop/img/iii.png&apos;)</div><div class="line">&gt;&gt;&gt; iii = ii.filter(ImageFilter.BLUR)</div><div class="line">&gt;&gt;&gt; iii.save(&apos;ib.png&apos;,&apos;png&apos;)</div></pre></td></tr></table></figure>
-<h4 id="virtualenv"><a href="#virtualenv" class="headerlink" title="virtualenv"></a>virtualenv</h4><p>为Python应用提供不同的独立的Python运行环境,以适应不同版本</p>
-<p>安装方法: <strong>pip install virtualenv</strong></p>
-<p>windows环境下的使用:</p>
-<p>打开命令提示符,可以指定位置,使用 python -m venv 文件名 就可以创建一个独立的干净的没有第三方库的Python运行环境.</p>
-<p>在此环境下使用pip安装其他库,就会安装在新创建的环境中,</p>
-<h3 id="图像界面"><a href="#图像界面" class="headerlink" title="图像界面"></a>图像界面</h3><h4 id="Tkinter"><a href="#Tkinter" class="headerlink" title="Tkinter"></a>Tkinter</h4><p><a href="https://docs.python.org/3.5/library/tkinter.html?highlight=tkinter#module-tkinter" target="_blank" rel="external">文档地址</a></p>
-<p>官方解释:</p>
-<blockquote>
-<p>The <a href="https://docs.python.org/3.5/library/tkinter.html?highlight=tkinter#module-tkinter" target="_blank" rel="external">tkinter</a> package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit. Both Tk and <a href="https://docs.python.org/3.5/library/tkinter.html?highlight=tkinter#module-tkinter" target="_blank" rel="external">tkinter</a> are available on most Unix platforms, as well as on Windows systems. (Tk itself is not part of Python; it is maintained at ActiveState.) You can check that <a href="https://docs.python.org/3.5/library/tkinter.html?highlight=tkinter#module-tkinter" target="_blank" rel="external">tkinter</a> is properly installed on your system by running python -m tkinter from the command line; this should open a window demonstrating a simple Tk interface.</p>
-</blockquote>
-<p>可以看出,tkinter是Tk 图形库的一个标准Python接口,既可以在Unix平台上,也可以在Windows平台上运行,Tk它本身并不是Python的一部分,还在维护.可以在命令行窗口直接输入 python -m tkinter 就会弹出一个窗口.</p>
-<p><img src="http://omn25tqvz.bkt.clouddn.com/tkinter.png" alt=""></p>
-<p>Hello World窗口示例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">import tkinter as tk</div><div class="line"></div><div class="line">class Application(tk.Frame):</div><div class="line">    def init(self, master=None):</div><div class="line">        super().init(master)</div><div class="line">        self.pack()</div><div class="line">        self.create_widgets()</div><div class="line">    def create_widgets(self):</div><div class="line">        self.hi_there = tk.Button(self)</div><div class="line">        self.hi_there[&quot;text&quot;] = &quot;Hello World\n(click me)&quot;       </div><div class="line">        self.hi_there[&quot;command&quot;] = self.say_hi       </div><div class="line">        self.hi_there.pack(side=&quot;top&quot;)</div><div class="line">        </div><div class="line">        self.quit = tk.Button(self, text=&quot;QUIT&quot;,fg=&quot;red&quot;,</div><div class="line">            command=root.destroy)</div><div class="line">            </div><div class="line">        self.quit.pack(side=&quot;bottom&quot;) </div><div class="line">        </div><div class="line">    def say_hi(self):</div><div class="line">        print(&quot;hi there, everyone!&quot;)</div><div class="line">root = tk.Tk()</div><div class="line">app = Application(master=root)</div><div class="line">app.mainloop()</div></pre></td></tr></table></figure>
-<p>点击一下,可以在命令行里输出”hi there,everyone!”</p>
-<p><img src="http://omn25tqvz.bkt.clouddn.com/tk.png" alt=""></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/11/Python学习九/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

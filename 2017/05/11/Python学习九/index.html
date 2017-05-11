@@ -91,9 +91,7 @@
 常用的第三方模块Python既有内建模块,还有大量的第三方模块,模块网址按需安装
 PIL全称是: Python Imaging Library 是Python的图像处理标准库,功能强大且易用,仅支持到Python 2.7
 Pillow支持最新Python3.X
-安装方式: pip install pillow
-操作缩放图像:
-123456789&amp;gt;&amp;gt;&amp;">
+安装方式: pip install pillow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python学习九">
 <meta property="og:url" content="http://yoursite.com/2017/05/11/Python学习九/index.html">
@@ -102,21 +100,17 @@ Pillow支持最新Python3.X
 常用的第三方模块Python既有内建模块,还有大量的第三方模块,模块网址按需安装
 PIL全称是: Python Imaging Library 是Python的图像处理标准库,功能强大且易用,仅支持到Python 2.7
 Pillow支持最新Python3.X
-安装方式: pip install pillow
-操作缩放图像:
-123456789&amp;gt;&amp;gt;&amp;">
+安装方式: pip install pillow">
 <meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/tkinter.png">
 <meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/tk.png">
-<meta property="og:updated_time" content="2017-05-11T10:16:41.205Z">
+<meta property="og:updated_time" content="2017-05-11T10:20:06.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习九">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
 常用的第三方模块Python既有内建模块,还有大量的第三方模块,模块网址按需安装
 PIL全称是: Python Imaging Library 是Python的图像处理标准库,功能强大且易用,仅支持到Python 2.7
 Pillow支持最新Python3.X
-安装方式: pip install pillow
-操作缩放图像:
-123456789&amp;gt;&amp;gt;&amp;">
+安装方式: pip install pillow">
 <meta name="twitter:image" content="http://omn25tqvz.bkt.clouddn.com/tkinter.png">
 
 
@@ -451,6 +445,7 @@ Pillow支持最新Python3.X
 <h4 id="PIL"><a href="#PIL" class="headerlink" title="PIL"></a>PIL</h4><p>全称是: <strong>Python Imaging Library</strong> 是Python的图像处理标准库,功能强大且易用,仅支持到Python 2.7</p>
 <h4 id="Pillow"><a href="#Pillow" class="headerlink" title="Pillow"></a>Pillow</h4><p>支持最新Python3.X</p>
 <p>安装方式: pip install pillow</p>
+<a id="more"></a>
 <p>操作缩放图像:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from PIL import Image</div><div class="line">&gt;&gt;&gt; i = Image.open(&apos;C:/Users/snow/Desktop/img/boy.jpg&apos;)</div><div class="line">&gt;&gt;&gt; w,h = i.size</div><div class="line">&gt;&gt;&gt; print(&apos;Image size: %s*%s&apos; % (w,h))</div><div class="line">Image size: 1080*1002</div><div class="line">&gt;&gt;&gt; i.thumbnail((w//2,h//2))</div><div class="line">&gt;&gt;&gt; print(&apos;Image size: %s*%s&apos; % (w//2,h//2))</div><div class="line">Image size: 540*501</div><div class="line">&gt;&gt;&gt; i.save(&apos;thumboy.jpg&apos;,&apos;jpeg&apos;)</div></pre></td></tr></table></figure>
 <p>图片模糊:</p>
