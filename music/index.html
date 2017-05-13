@@ -93,7 +93,7 @@
 <meta property="og:url" content="http://yoursite.com/music/index.html">
 <meta property="og:site_name" content="Snow">
 <meta property="og:description" content="A Little Story">
-<meta property="og:updated_time" content="2017-03-17T15:45:04.725Z">
+<meta property="og:updated_time" content="2017-05-13T03:43:05.433Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A Little Story">
 <meta name="twitter:description" content="A Little Story">
@@ -329,7 +329,7 @@
     
     
       <p>A Little Story</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="420" height="86" src="//music.163.com/outchain/player?type=2&id=17996972&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="//music.163.com/outchain/player?type=0&id=726402740&auto=1&height=430"></iframe>
     
   </div>
 
@@ -339,6 +339,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -599,6 +610,13 @@
 
       run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
 
     </script>
