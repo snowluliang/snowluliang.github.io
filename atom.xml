@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-16T03:36:33.981Z</updated>
+  <updated>2017-05-16T03:37:23.025Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,14 @@
     <link href="http://yoursite.com/2017/05/16/Python%E5%AD%A6%E4%B9%A0%E5%8D%81/"/>
     <id>http://yoursite.com/2017/05/16/Python学习十/</id>
     <published>2017-05-16T03:17:42.000Z</published>
-    <updated>2017-05-16T03:36:33.981Z</updated>
+    <updated>2017-05-16T03:37:23.025Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;学习网址:廖雪峰的Pyth
+      &lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;学习网址:廖雪峰的Python教程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;网络编程&quot;&gt;&lt;a href=&quot;#网络编程&quot; class=&quot;headerlink&quot; title=&quot;网络编程&quot;&gt;&lt;/a&gt;网络编程&lt;/h3&gt;&lt;p&gt;网络编程就是如何实现两台计算机的通信,互联网时代的到来,现在程序基本都是联网的了,很少有单机类的了,计算机网络就是把各个计算机连接起来,让其在网络中可以通信.&lt;/p&gt;
+&lt;h4 id=&quot;TCP-IP&quot;&gt;&lt;a href=&quot;#TCP-IP&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP&quot;&gt;&lt;/a&gt;TCP/IP&lt;/h4&gt;&lt;p&gt;计算机要想联网,就必须规定通信协议,早起的计算机网络都是些私人的网络协议,互不兼容.为了把全世界的不通类型的计算机连接起来,就要规定一套全球通用的网络通信协议.最重要的两个协议就是TCP和IP协议.&lt;/p&gt;
+&lt;p&gt;IP协议负责把数据从一台计算机通过网络发送到另一台计算机上.特点是:按块发送,途径多个路由,不能保证到达,不能保证顺序到达.&lt;/p&gt;
     
     </summary>
     

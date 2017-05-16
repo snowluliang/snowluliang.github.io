@@ -430,40 +430,17 @@
 
       
         
-          
-            <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">学习网址:廖雪峰的Python教程</a></p>
+          <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">学习网址:廖雪峰的Python教程</a></p>
 <h3 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h3><p>网络编程就是如何实现两台计算机的通信,互联网时代的到来,现在程序基本都是联网的了,很少有单机类的了,计算机网络就是把各个计算机连接起来,让其在网络中可以通信.</p>
 <h4 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h4><p>计算机要想联网,就必须规定通信协议,早起的计算机网络都是些私人的网络协议,互不兼容.为了把全世界的不通类型的计算机连接起来,就要规定一套全球通用的网络通信协议.最重要的两个协议就是TCP和IP协议.</p>
 <p>IP协议负责把数据从一台计算机通过网络发送到另一台计算机上.特点是:按块发送,途径多个路由,不能保证到达,不能保证顺序到达.</p>
-<p>每台计算机的唯一标示就是IP地址.</p>
-<p>TCP协议是建立在IP协议之上的,它负责两台计算机之间建立可靠连接,保证数据包的安全到达,通过三次握手建立连接,对IP包编号,确保对方按顺序收到,如丢包,则自动重发.</p>
-<p>IP包除了包含要传输的数据外,还包含源IP地址和目标IP地址,源端口和目标端口</p>
-<h4 id="TCP编程"><a href="#TCP编程" class="headerlink" title="TCP编程"></a>TCP编程</h4><h5 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h5><p>一个Socket表示’打开了一个网络连接,使用Socket需要知道目标计算机的IP地址和端口,指定协议类型就可以了.</p>
-<h5 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h5><p>创建TCP连接时,主动发起连接的叫客户端,被动响应连接的叫服务器.</p>
-<p><a href="https://docs.python.org/3.5/library/socket.html?highlight=socket#module-socket" target="_blank" rel="external">socket文档</a></p>
-<p>创建一个基于TCP的Socket:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># Echo client program</div><div class="line">import socket</div><div class="line">HOST = &apos;daring.cwi.nl&apos;    # The remote host</div><div class="line">PORT = 50007             # The same port as used by the server</div><div class="line">with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:</div><div class="line">    s.connect((HOST, PORT))   </div><div class="line">    s.sendall(b&apos;Hello, world&apos;)  </div><div class="line">    data = s.recv(1024)</div><div class="line">print(&apos;Received&apos;, repr(data))</div></pre></td></tr></table></figure>
-<p>先导入socket包,指定Host,端口号PORT,协议类型:AF_INET代表IPv4协议,AF_INET6表示IPv6协议.SOCK_STREAM指定使用面向流的TCP协议.</p>
-<p><strong>sendall()</strong>发送数据,<strong>recv()</strong>接收数据,可以指定接收容量(字节数).<strong>close()</strong>方法关闭连接.</p>
-<p>建立的Socket连接是双向的,双方都可以给对方发送数据.先后顺序由协议来决定.</p>
-<h5 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h5><p>服务器进程需要绑定一个端口监听来自其他客户端的连接,如果连接了,就和该客户端建立Socket连接和通信.</p>
-<p>一个Socket由服务器地址,服务器端口,客户端地址,客户端端口来确定.服务器需要同时响应多个客户端请求,因此,需要新的进程或线程来处理,否则,服务器一次就只能服务一个客户端.</p>
-<p>创建服务器端:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># Echo server program</div><div class="line">import socke</div><div class="line">tHOST = &apos;&apos;                # Symbolic name meaning all available interfaces</div><div class="line">PORT = 50007              # Arbitrary non-privileged port</div><div class="line">with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:  </div><div class="line">    s.bind((HOST, PORT))  </div><div class="line">    s.listen(1)   </div><div class="line">    conn, addr = s.accept()  </div><div class="line">    with conn:       </div><div class="line">        print(&apos;Connected by&apos;, addr)     </div><div class="line">        while True:         </div><div class="line">            data = conn.recv(1024)       </div><div class="line">            if not data: break         </div><div class="line">            conn.sendall(data)</div></pre></td></tr></table></figure>
-<p><strong>bind()</strong>方法绑定地址和端口.<strong>listen()</strong>方法用来监听端口,参数代表等待连接的数量.</p>
-<p>例图:</p>
-<p><img src="http://omn25tqvz.bkt.clouddn.com/server.png" alt=""></p>
-<p>客户端要主动连接服务器,服务器监听指定端口,对每个新来的连接,创建一个线程或进程来处理.同一个端口,被一个Socket绑定后,就不能被别的Socket绑定了.</p>
-<h4 id="UDP编程"><a href="#UDP编程" class="headerlink" title="UDP编程"></a>UDP编程</h4><p>UDP与TCP相比,UDP是无连接的协议,不需要建立连接,确定IP地址和端口号就可以发送数据包了,速度快.但不保证是否到达.传输数据不可靠.</p>
-<h5 id="创建UDP服务端"><a href="#创建UDP服务端" class="headerlink" title="创建UDP服务端:"></a>创建UDP服务端:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">import socket</div><div class="line">s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)</div><div class="line"># 绑定端口:</div><div class="line">s.bind((&apos;127.0.0.1&apos;, 8973)</div><div class="line">print(&apos;Bind UDP on 8973...&apos;)</div><div class="line">while True:</div><div class="line">    # 接收数据:</div><div class="line">    data, addr = s.recvfrom(1024)</div><div class="line">    print(&apos;Received from %s:%s.&apos; % addr)</div><div class="line">    reply = &apos;Hi, %s!&apos; % data.decode(&apos;utf-8&apos;)</div><div class="line">    s.sendto(reply.encode(&apos;utf-8&apos;), addr)</div></pre></td></tr></table></figure>
-<p><strong>SOCK_DGRAM</strong>代表Socket是UDP类型,不需要监听端口,<strong>recvfrom()</strong>返回数据和客户端的地址和端口.</p>
-<h5 id="创建UDP客户端"><a href="#创建UDP客户端" class="headerlink" title="创建UDP客户端:"></a>创建UDP客户端:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">import socket</div><div class="line">s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)</div><div class="line">for data in [b&apos;Stark&apos;, b&apos;Captain&apos;, b&apos;Thor&apos;]:</div><div class="line">    # 发送数据:</div><div class="line">    s.sendto(data, (&apos;127.0.0.1&apos;, 8973))</div><div class="line">    # 接收数据:</div><div class="line">    print(s.recv(1024).decode(&apos;utf-8&apos;))</div><div class="line">s.close()</div></pre></td></tr></table></figure>
-<p>不需要连接时才发送,直接发送数据过,recv()方法从服务器接收数据.</p>
-<p>例图:</p>
-<p><img src="http://omn25tqvz.bkt.clouddn.com/udp_sc.png" alt=""></p>
-<hr>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/16/Python学习十/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

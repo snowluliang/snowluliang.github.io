@@ -99,7 +99,7 @@ TCP/IP计算机要想联网,就必须规定通信协议,早起的计算机网络
 TCP/IP计算机要想联网,就必须规定通信协议,早起的计算机网络都是些私人的网络协议,互不兼容.为了把全世界的不通类型的计算机连接起来,就要规定一套全球通用的网络通信协议.最重要的两个协议就是TC">
 <meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/server.png">
 <meta property="og:image" content="http://omn25tqvz.bkt.clouddn.com/udp_sc.png">
-<meta property="og:updated_time" content="2017-05-16T03:36:33.981Z">
+<meta property="og:updated_time" content="2017-05-16T03:37:23.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习十">
 <meta name="twitter:description" content="学习网址:廖雪峰的Python教程
@@ -438,6 +438,7 @@ TCP/IP计算机要想联网,就必须规定通信协议,早起的计算机网络
 <h3 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h3><p>网络编程就是如何实现两台计算机的通信,互联网时代的到来,现在程序基本都是联网的了,很少有单机类的了,计算机网络就是把各个计算机连接起来,让其在网络中可以通信.</p>
 <h4 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h4><p>计算机要想联网,就必须规定通信协议,早起的计算机网络都是些私人的网络协议,互不兼容.为了把全世界的不通类型的计算机连接起来,就要规定一套全球通用的网络通信协议.最重要的两个协议就是TCP和IP协议.</p>
 <p>IP协议负责把数据从一台计算机通过网络发送到另一台计算机上.特点是:按块发送,途径多个路由,不能保证到达,不能保证顺序到达.</p>
+<a id="more"></a>
 <p>每台计算机的唯一标示就是IP地址.</p>
 <p>TCP协议是建立在IP协议之上的,它负责两台计算机之间建立可靠连接,保证数据包的安全到达,通过三次握手建立连接,对IP包编号,确保对方按顺序收到,如丢包,则自动重发.</p>
 <p>IP包除了包含要传输的数据外,还包含源IP地址和目标IP地址,源端口和目标端口</p>
