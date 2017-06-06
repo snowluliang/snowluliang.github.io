@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-16T03:45:46.052Z</updated>
+  <updated>2017-06-06T01:49:03.986Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django基础知识</title>
+    <link href="http://yoursite.com/2017/06/06/Django%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/2017/06/06/Django基础知识/</id>
+    <published>2017-06-06T01:18:21.000Z</published>
+    <updated>2017-06-06T01:49:03.986Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Django&quot;&gt;&lt;a href=&quot;#Django&quot; class=&quot;headerlink&quot; title=&quot;Django&quot;&gt;&lt;/a&gt;Django&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.djangoproject.com/&quot; target=&quot;_blan
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习(十)</title>
