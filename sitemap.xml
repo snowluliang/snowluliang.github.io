@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/07/24/%E6%97%A0%E9%A2%98/</loc>
+    
+    <lastmod>2017-07-24T09:05:15.270Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/%E6%97%A0%E9%A2%98.html</loc>
+    
+    <lastmod>2017-07-24T09:01:35.744Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/06/06/Django%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
     
     <lastmod>2017-06-06T01:53:03.078Z</lastmod>
