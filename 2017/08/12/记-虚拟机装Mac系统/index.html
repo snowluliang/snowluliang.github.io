@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/6.png">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/8.png">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/9.png">
-<meta property="og:updated_time" content="2017-08-12T10:53:35.154Z">
+<meta property="og:updated_time" content="2017-08-12T10:58:37.689Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记-虚拟机装Mac系统">
 <meta name="twitter:description" content="记,虚拟机装Mac系统前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
@@ -450,15 +450,13 @@
 <p>设置系统属性<img src="http://olt1ii1tx.bkt.clouddn.com/4.png" alt="属性"></p>
 <p><img src="http://olt1ii1tx.bkt.clouddn.com/5.png" alt="处理器"></p>
 <p><img src="http://olt1ii1tx.bkt.clouddn.com/6.png" alt="显存"></p>
-<p>然后关闭虚拟机,在VirtualBox的安装位置打开命令行,输入下面命令</p>
-<ul>
-<li>VBoxManage.exe modifyvm 电脑名称 —-cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff  </li>
-<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiSystemProduct” “iMac11,3”  </li>
-<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiSystemVersion” “1.0”  </li>
-<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiBoardProduct” “Iloveapple”  </li>
-<li>VBoxManage setextradata 电脑名称”VBoxInternal/Devices/smc/0/Config/DeviceKey””ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc”  </li>
-<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC” 1</li>
-</ul>
+<p>然后关闭虚拟机,在VirtualBox的安装位置打开命令行,输入下面命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VBoxManage.exe modifyvm 电脑名称 ----cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VBoxManage setextradata 电脑名称 &quot;VBoxInternal/Devices/efi/0/Config/DmiSystemProduct&quot; &quot;iMac11,3&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VBoxManage setextradata 电脑名称 &quot;VBoxInternal/Devices/efi/0/Config/DmiSystemVersion&quot; &quot;1.0&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VBoxManage setextradata 电脑名称 &quot;VBoxInternal/Devices/efi/0/Config/DmiBoardProduct&quot; &quot;Iloveapple&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VBoxManage setextradata电脑名称 &quot;VBoxInternal/Devices/smc/0/Config/DeviceKey&quot;&quot;ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VBoxManage setextradata 电脑名称 &quot;VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC&quot; 1</div></pre></td></tr></table></figure>
 <p><strong>注意以上命令行的文字,尽量复制粘贴.</strong></p>
 <p>然后,打开虚拟机,启动新的虚拟电脑<img src="http://olt1ii1tx.bkt.clouddn.com/8.png" alt="启动"></p>
 <p>电脑会进行初始化,等1分钟,就会出现<img src="http://olt1ii1tx.bkt.clouddn.com/9.png" alt="Mac"></p>
