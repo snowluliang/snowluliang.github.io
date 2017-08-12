@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习," />
 
 
 
@@ -87,14 +87,12 @@
 
 
 
-<meta name="description" content="记,虚拟机装Mac系统
-前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
+<meta name="description" content="记,虚拟机装Mac系统前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Snow">
+<meta property="og:title" content="记-虚拟机装Mac系统">
 <meta property="og:url" content="http://yoursite.com/2017/08/12/记-虚拟机装Mac系统/index.html">
 <meta property="og:site_name" content="Snow">
-<meta property="og:description" content="记,虚拟机装Mac系统
-前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
+<meta property="og:description" content="记,虚拟机装Mac系统前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/1.png">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/2.png">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/3.png">
@@ -103,11 +101,10 @@
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/6.png">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/8.png">
 <meta property="og:image" content="http://olt1ii1tx.bkt.clouddn.com/9.png">
-<meta property="og:updated_time" content="2017-08-12T10:35:31.856Z">
+<meta property="og:updated_time" content="2017-08-12T10:45:04.721Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Snow">
-<meta name="twitter:description" content="记,虚拟机装Mac系统
-前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
+<meta name="twitter:title" content="记-虚拟机装Mac系统">
+<meta name="twitter:description" content="记,虚拟机装Mac系统前两天在B站关注了一个叫啃芝士的账号,经常分享一些科普的视频.推荐关注.">
 <meta name="twitter:image" content="http://olt1ii1tx.bkt.clouddn.com/1.png">
 
 
@@ -142,7 +139,7 @@
 
 
 
-  <title>  | Snow </title>
+  <title> 记-虚拟机装Mac系统 | Snow </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -354,7 +351,7 @@
             
             
               
-                
+                记-虚拟机装Mac系统
               
             
           </h1>
@@ -369,7 +366,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-12T18:33:09+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-12T18:41:14+08:00">
                 2017-08-12
               </time>
             
@@ -379,6 +376,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -415,8 +434,7 @@
       
 
       
-        <p>记,虚拟机装Mac系统</p>
-<p>前两天在B站关注了一个叫<strong>啃芝士</strong>的账号,经常分享一些科普的视频.推荐关注.</p>
+        <h1 id="记-虚拟机装Mac系统"><a href="#记-虚拟机装Mac系统" class="headerlink" title="记,虚拟机装Mac系统"></a>记,虚拟机装Mac系统</h1><p>前两天在B站关注了一个叫<strong>啃芝士</strong>的账号,经常分享一些科普的视频.推荐关注.</p>
 <a id="more"></a>
 <p>有个视频讲到了用VirtualBox装Mac系统的操作,感觉很神奇,就Google了一下,按照教程,装了一下,参考的是一个论坛的方案,<a href="http://blog.csdn.net/chy555chy/article/details/51407410" target="_blank" rel="external">安装方法</a> </p>
 <p>具体步骤:</p>
@@ -434,18 +452,18 @@
 <p><img src="http://olt1ii1tx.bkt.clouddn.com/6.png" alt="显存"></p>
 <p>然后关闭虚拟机,在VirtualBox的安装位置打开命令行,输入下面命令</p>
 <ul>
-<li>VBoxManage.exe modifyvm 虚拟电脑名称 –cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff  </li>
-<li>VBoxManage setextradata 虚拟电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiSystemProduct” “iMac11,3”  </li>
-<li>VBoxManage setextradata 虚拟电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiSystemVersion” “1.0”  </li>
-<li>VBoxManage setextradata 虚拟电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiBoardProduct” “Iloveapple”  </li>
-<li>VBoxManage setextradata 虚拟电脑名称 “VBoxInternal/Devices/smc/0/Config/DeviceKey” “ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc”  </li>
-<li>VBoxManage setextradata 虚拟电脑名称 “VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC” 1</li>
+<li>VBoxManage.exe modifyvm 电脑名称 –cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff  </li>
+<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiSystemProduct” “iMac11,3”  </li>
+<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiSystemVersion” “1.0”  </li>
+<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/efi/0/Config/DmiBoardProduct” “Iloveapple”  </li>
+<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/smc/0/Config/DeviceKey” “ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc”  </li>
+<li>VBoxManage setextradata 电脑名称 “VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC” 1</li>
 </ul>
 <p><strong>注意以上命令行的文字,尽量复制粘贴.</strong></p>
 <p>然后,打开虚拟机,启动新的虚拟电脑<img src="http://olt1ii1tx.bkt.clouddn.com/8.png" alt="启动"></p>
 <p>电脑会进行初始化,等1分钟,就会出现<img src="http://olt1ii1tx.bkt.clouddn.com/9.png" alt="Mac"></p>
 <p>后面的就可以自己慢慢折腾了….</p>
-<p>再次感谢原博主的消息教程.</p>
+<p><strong>再次感谢原博主的消息教程.</strong></p>
 
       
     </div>
@@ -487,6 +505,12 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+        </div>
       
 
       
@@ -559,8 +583,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/boy.jpg"
@@ -664,6 +697,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#记-虚拟机装Mac系统"><span class="nav-number">1.</span> <span class="nav-text">记,虚拟机装Mac系统</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -791,7 +840,7 @@
       var disqus_shortname = 'snowluliang';
       var disqus_identifier = '2017/08/12/记-虚拟机装Mac系统/';
 
-      var disqus_title = "";
+      var disqus_title = "记-虚拟机装Mac系统";
 
 
       function run_disqus_script(disqus_script) {
