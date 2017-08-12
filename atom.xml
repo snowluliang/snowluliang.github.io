@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-24T09:35:31.101Z</updated>
+  <updated>2017-08-12T10:35:31.856Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/08/12/%E8%AE%B0-%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%A3%85Mac%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2017/08/12/记-虚拟机装Mac系统/</id>
+    <published>2017-08-12T10:33:09.123Z</published>
+    <updated>2017-08-12T10:35:31.856Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记,虚拟机装Mac系统&lt;/p&gt;
+&lt;p&gt;前两天在B站关注了一个叫&lt;strong&gt;啃芝士&lt;/strong&gt;的账号,经常分享一些科普的视频.推荐关注.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>无题</title>
