@@ -322,6 +322,174 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/28/Python-Web-Servers/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="snowluliang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/boy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Snow">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/10/28/Python-Web-Servers/" itemprop="url">
+                  Python Web Servers
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-28T21:18:47+08:00">
+                2017-10-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/28/Python-Web-Servers/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/10/28/Python-Web-Servers/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Web-Servers"><a href="#Web-Servers" class="headerlink" title="Web Servers"></a>Web Servers</h3><p>Flask是Python 用来打造网页应用的一个库.Facebook和Google都是网页应用的例子.</p>
+<p>Flask的使用方法,从flask中导入Flask:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div></pre></td></tr></table></figure>
+<p>导入Flask之后,就可以创建一个Flask app.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">app = Flask(__name__)</div></pre></td></tr></table></figure>
+<p>这个变量__name __ 是用来说明,这个应用是主应用还是其他程序的应用.</p>
+<p>我们用app.route()来决定用什么来触发一个函数,这里,我们用一个URL来触发这个函数.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">app = Flask(__name__)</div><div class="line"># &apos;/&apos; indicates the default URL of the app</div><div class="line">@app.route(&apos;/&apos;)</div><div class="line">#put a function here</div></pre></td></tr></table></figure>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><h4 id="定义一个hello-world的方法"><a href="#定义一个hello-world的方法" class="headerlink" title="定义一个hello_world的方法:"></a>定义一个hello_world的方法:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">app = Flask(__name__)</div><div class="line"># &apos;/&apos; indicates the default URL of the app</div><div class="line">@app.route(&apos;/&apos;)</div><div class="line">#put a function here</div><div class="line">def hello_world():</div><div class="line">	return &apos;Hello,world!&apos;</div><div class="line">	</div><div class="line">if __name__ == &quot;__main__&quot;:</div><div class="line">	app.run()</div></pre></td></tr></table></figure>
+<h4 id="不同的URLs返回不同页面"><a href="#不同的URLs返回不同页面" class="headerlink" title="不同的URLs返回不同页面:"></a>不同的URLs返回不同页面:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line"></div><div class="line">app = Flask(__name__)</div><div class="line"># &apos;/&apos; indicates the default URL of the app</div><div class="line">#http://127.0.0.1:5000/</div><div class="line">@app.route(&apos;/&apos;)</div><div class="line">#put a function here</div><div class="line">def home():</div><div class="line">	return &apos;Home Page&apos;</div><div class="line"></div><div class="line">@app.route(&apos;/about&apos;)</div><div class="line">#put a function here</div><div class="line">def about():</div><div class="line">	return &apos;About Us&apos;</div><div class="line"></div><div class="line">if __name__ == &quot;__main__&quot;:</div><div class="line">	app.run()</div></pre></td></tr></table></figure>
+<p>打开网址,如图:</p>
+<p><img src="http://olt1ii1tx.bkt.clouddn.com/home_page.png" alt="home_page"></p>
+<p>在网址后加上about,如图:</p>
+<p><img src="http://olt1ii1tx.bkt.clouddn.com/about.png" alt="about"></p>
+<h4 id="在URLs后面添加变量"><a href="#在URLs后面添加变量" class="headerlink" title="在URLs后面添加变量"></a>在URLs后面添加变量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@app.route(&apos;/user/&lt;username&gt;&apos;)</div><div class="line">#put a function here</div><div class="line">def show_user_profile(username):</div><div class="line">	return &apos;User %s&apos; % username</div></pre></td></tr></table></figure>
+<p>打开网址,输入变量:</p>
+<p><img src="http://olt1ii1tx.bkt.clouddn.com/user.png" alt="user"></p>
+<h4 id="加上其他变量"><a href="#加上其他变量" class="headerlink" title="加上其他变量:"></a>加上其他变量:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@app.route(&apos;/post/&lt;int:post_id&gt;&apos;)</div><div class="line">def show_post(post_id):</div><div class="line">	return &apos;Post %d&apos; % post_id</div><div class="line">    </div><div class="line">@app.route(&apos;/example/&lt;float:ex&gt;&apos;)</div><div class="line">@app.route(&apos;/example/&lt;any:ex&gt;&apos;)</div></pre></td></tr></table></figure>
+<hr>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/14/关于深度学习的一些基础知识/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1734,164 +1902,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/31/Python学习五/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="snowluliang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/boy.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Snow">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/31/Python学习五/" itemprop="url">
-                  Python学习(五)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-31T21:59:52+08:00">
-                2017-03-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习记录/" itemprop="url" rel="index">
-                    <span itemprop="name">学习记录</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/31/Python学习五/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/31/Python学习五/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">学习网址:廖雪峰的Python教程</a></p>
-<h4 id="多进程和多线程"><a href="#多进程和多线程" class="headerlink" title="多进程和多线程"></a>多进程和多线程</h4><p>线程是最小的执行单元,真正的多进程是需要多核CPU支持才行,单核CPU之所以能执行多进程,是因为CPU的执行速度非常之快,在多个进程中交替执行,看起来像是多进程,实际上还是单进程.进程中包含有许多线程,像word之类的编辑文档,既需要记录用户输入的内容,又需要随时保存,打印等服务.</p>
-<h4 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h4><p>Python中os模块封装了常见的系统调用,包括fork()方法,可以在Python中创建子进程,但是在Windows下,调用fork() 方法时,却没有…</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import os</div><div class="line">&gt;&gt;&gt; print(&apos;Process (%s) start...&apos; % os.getpid())</div><div class="line">Process (7088) start...</div><div class="line">&gt;&gt;&gt; pid = os.fork()</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</div><div class="line">AttributeError: module &apos;os&apos; has no attribute &apos;fork&apos;</div></pre></td></tr></table></figure>
-<p>Windows上就没有办法编写多进程的程序了嘛?当然不是.</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/31/Python学习五/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1941,7 +1951,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

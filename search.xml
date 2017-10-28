@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Python Web Servers]]></title>
+      <url>%2F2017%2F10%2F28%2FPython-Web-Servers%2F</url>
+      <content type="text"><![CDATA[Web ServersFlask是Python 用来打造网页应用的一个库.Facebook和Google都是网页应用的例子. Flask的使用方法,从flask中导入Flask: 1from flask import Flask 导入Flask之后,就可以创建一个Flask app. 12from flask import Flaskapp = Flask(__name__) 这个变量__name __ 是用来说明,这个应用是主应用还是其他程序的应用. 我们用app.route()来决定用什么来触发一个函数,这里,我们用一个URL来触发这个函数. 12345from flask import Flaskapp = Flask(__name__)# &apos;/&apos; indicates the default URL of the app@app.route(&apos;/&apos;)#put a function here 举例定义一个hello_world的方法:12345678910from flask import Flaskapp = Flask(__name__)# &apos;/&apos; indicates the default URL of the app@app.route(&apos;/&apos;)#put a function heredef hello_world(): return &apos;Hello,world!&apos; if __name__ == &quot;__main__&quot;: app.run() 不同的URLs返回不同页面:1234567891011121314151617from flask import Flaskapp = Flask(__name__)# &apos;/&apos; indicates the default URL of the app#http://127.0.0.1:5000/@app.route(&apos;/&apos;)#put a function heredef home(): return &apos;Home Page&apos;@app.route(&apos;/about&apos;)#put a function heredef about(): return &apos;About Us&apos;if __name__ == &quot;__main__&quot;: app.run() 打开网址,如图: 在网址后加上about,如图: 在URLs后面添加变量1234@app.route(&apos;/user/&lt;username&gt;&apos;)#put a function heredef show_user_profile(username): return &apos;User %s&apos; % username 打开网址,输入变量: 加上其他变量:123456@app.route(&apos;/post/&lt;int:post_id&gt;&apos;)def show_post(post_id): return &apos;Post %d&apos; % post_id @app.route(&apos;/example/&lt;float:ex&gt;&apos;)@app.route(&apos;/example/&lt;any:ex&gt;&apos;)]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[关于深度学习的一些基础知识]]></title>
       <url>%2F2017%2F09%2F14%2F%E5%85%B3%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
       <content type="text"><![CDATA[Supervised Learning 监督学习 Structured Data 结构化数据 是指像数据库里的数据,有数据特征和属性.机器更易解读. Unstructured Data 非结构化数据 指类似音频Audio,图片Image,文本Text.人们更易解读. Standard NN 标准神经网络 Convolutional NN 卷积神经网络 Recurrent NN 循环神经网络(暂译) 传统模式识别方法 ①传感器获取数据 ②预处理 ③特征提取 ——-&gt;主要靠人工提取,深入学习的出现为机器能不能自动学习特征,提供了一种解决方案 ④特征选择就 ⑤推理 ⑥预测或识别 机器学习的三大阶段 一,1956年–&gt;出现神经网络模型,由于当时的计算能力和数据量较少,进入寒冬期 二,1980年–&gt;专家系统,人工智能项目,政府投入缩减,再次搁置.1997年–&gt;IBM研发的深蓝战胜国际围棋冠军. 三,2006年–&gt;提出深度学习网络.2011年,苹果 Siri.2012年,Google的无人车.2016年,阿尔法战胜围棋冠军. 待续…]]></content>

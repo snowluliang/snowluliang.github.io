@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-14T09:01:37.735Z</updated>
+  <updated>2017-10-28T13:21:35.846Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python Web Servers</title>
+    <link href="http://yoursite.com/2017/10/28/Python-Web-Servers/"/>
+    <id>http://yoursite.com/2017/10/28/Python-Web-Servers/</id>
+    <published>2017-10-28T13:18:47.000Z</published>
+    <updated>2017-10-28T13:21:35.846Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Web-Servers&quot;&gt;&lt;a href=&quot;#Web-Servers&quot; class=&quot;headerlink&quot; title=&quot;Web Servers&quot;&gt;&lt;/a&gt;Web Servers&lt;/h3&gt;&lt;p&gt;Flask是Python 用来打造网页应用的一个库.Facebook
+    
+    </summary>
+    
+      <category term="学习记录" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>关于深度学习的一些基础知识</title>
