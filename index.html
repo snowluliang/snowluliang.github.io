@@ -430,28 +430,16 @@
 
       
         
-          
-            <h3 id="Web-Servers"><a href="#Web-Servers" class="headerlink" title="Web Servers"></a>Web Servers</h3><p>Flask是Python 用来打造网页应用的一个库.Facebook和Google都是网页应用的例子.</p>
+          <h3 id="Web-Servers"><a href="#Web-Servers" class="headerlink" title="Web Servers"></a>Web Servers</h3><p>Flask是Python 用来打造网页应用的一个库.Facebook和Google都是网页应用的例子.</p>
 <p>Flask的使用方法,从flask中导入Flask:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div></pre></td></tr></table></figure>
-<p>导入Flask之后,就可以创建一个Flask app.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">app = Flask(__name__)</div></pre></td></tr></table></figure>
-<p>这个变量__name __ 是用来说明,这个应用是主应用还是其他程序的应用.</p>
-<p>我们用app.route()来决定用什么来触发一个函数,这里,我们用一个URL来触发这个函数.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">app = Flask(__name__)</div><div class="line"># &apos;/&apos; indicates the default URL of the app</div><div class="line">@app.route(&apos;/&apos;)</div><div class="line">#put a function here</div></pre></td></tr></table></figure>
-<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><h4 id="定义一个hello-world的方法"><a href="#定义一个hello-world的方法" class="headerlink" title="定义一个hello_world的方法:"></a>定义一个hello_world的方法:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">app = Flask(__name__)</div><div class="line"># &apos;/&apos; indicates the default URL of the app</div><div class="line">@app.route(&apos;/&apos;)</div><div class="line">#put a function here</div><div class="line">def hello_world():</div><div class="line">	return &apos;Hello,world!&apos;</div><div class="line">	</div><div class="line">if __name__ == &quot;__main__&quot;:</div><div class="line">	app.run()</div></pre></td></tr></table></figure>
-<h4 id="不同的URLs返回不同页面"><a href="#不同的URLs返回不同页面" class="headerlink" title="不同的URLs返回不同页面:"></a>不同的URLs返回不同页面:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line"></div><div class="line">app = Flask(__name__)</div><div class="line"># &apos;/&apos; indicates the default URL of the app</div><div class="line">#http://127.0.0.1:5000/</div><div class="line">@app.route(&apos;/&apos;)</div><div class="line">#put a function here</div><div class="line">def home():</div><div class="line">	return &apos;Home Page&apos;</div><div class="line"></div><div class="line">@app.route(&apos;/about&apos;)</div><div class="line">#put a function here</div><div class="line">def about():</div><div class="line">	return &apos;About Us&apos;</div><div class="line"></div><div class="line">if __name__ == &quot;__main__&quot;:</div><div class="line">	app.run()</div></pre></td></tr></table></figure>
-<p>打开网址,如图:</p>
-<p><img src="http://olt1ii1tx.bkt.clouddn.com/home_page.png" alt="home_page"></p>
-<p>在网址后加上about,如图:</p>
-<p><img src="http://olt1ii1tx.bkt.clouddn.com/about.png" alt="about"></p>
-<h4 id="在URLs后面添加变量"><a href="#在URLs后面添加变量" class="headerlink" title="在URLs后面添加变量"></a>在URLs后面添加变量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@app.route(&apos;/user/&lt;username&gt;&apos;)</div><div class="line">#put a function here</div><div class="line">def show_user_profile(username):</div><div class="line">	return &apos;User %s&apos; % username</div></pre></td></tr></table></figure>
-<p>打开网址,输入变量:</p>
-<p><img src="http://olt1ii1tx.bkt.clouddn.com/user.png" alt="user"></p>
-<h4 id="加上其他变量"><a href="#加上其他变量" class="headerlink" title="加上其他变量:"></a>加上其他变量:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@app.route(&apos;/post/&lt;int:post_id&gt;&apos;)</div><div class="line">def show_post(post_id):</div><div class="line">	return &apos;Post %d&apos; % post_id</div><div class="line">    </div><div class="line">@app.route(&apos;/example/&lt;float:ex&gt;&apos;)</div><div class="line">@app.route(&apos;/example/&lt;any:ex&gt;&apos;)</div></pre></td></tr></table></figure>
-<hr>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/28/Python-Web-Servers/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
