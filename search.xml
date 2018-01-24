@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[写点东西]]></title>
+      <url>%2F2018%2F01%2F24%2F%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF%2F</url>
+      <content type="text"><![CDATA[最近发生了什么新奇的事儿1，住在我隔壁的小哥已经连续唱了两天的「体面」，不知道他的前任给予了他什么样的打击和伤害。2，两个月算是看完了两本书，《人类简史》和《白夜行》，目前正在读《全球通史》。想起亚马逊推送的一片文章，新的一年读书计划，一年52本书！算下来是一个周一本。我觉得搞不定，时间安排不好，总会有一些东西和事物干扰你的读书计划。3，公司举办年会，自己当了主持人，又参加了小品和歌曲，各个节目都有待提高。4，为了接受业绩惩罚，自己在网上买了一堆多肉送给同事，皆大欢喜。5，如果你的鞋子脏了，你又不想洗鞋子的话，试试把你的鞋带洗干净，再穿上去看，也是很干净的哦。6，数字货币的风波刮的一阵一阵的，同学也有投资的。我只是觉得，区块链的技术倒是可以了解了解，数字货币也就小投，感受感受就好了。7，如果你想让自己的微博阅读量有所提高，有一个很有效的方法，就是在你发博文的时候要加一个话题，这样你的阅读量就会翻倍哦。还有就是参加的微博转发抽奖活动，先后中了两次奖品一本书《用数据讲故事》和一条手链「紫水晶」。为自己的中奖几率感到惊讶，之前都认为自己是中奖绝缘体，与奖品无关呢。开心^_^8，今年亲眼目睹着一条狗的生病到去世，而自己身为兽医的我却无能为力，也鄙视那家为它看病的宠物医院和医生，坑了这么多钱，还是不见好转，最后还是走了。十九，保重！9，千万不要在夜里做任何决定，因为第二天醒来，你一定会后悔。10，一些应用中的签到活动，如果你坚持下来的话，你会发现真的很有魔性，根本停不下来。最近在「友金所」「百词斩」「Py」「京东商城」「京东金融」「联通营业厅」「高德地图」还有「115网盘」签到，总会感觉有好多事要做，就是坚持每日签到。好友PK，排名的模式也是很厉害，总想着超越好友的劲儿，就是让你更长时间的用这款软件。11，一个人住的时候，坚持做晚饭，会为你剩下一笔钱哦。12，给自己的日常工作，编排一个待办事项，完成一项就斩掉，全部完成后，会让你精神气爽，如释重负。13，驾照到手两年了，一直在开自动挡汽车,现在都不习惯开手动挡汽车了。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Python Web Servers]]></title>
       <url>%2F2017%2F10%2F28%2FPython-Web-Servers%2F</url>
       <content type="text"><![CDATA[Web ServersFlask是Python 用来打造网页应用的一个库.Facebook和Google都是网页应用的例子. Flask的使用方法,从flask中导入Flask: 1from flask import Flask 导入Flask之后,就可以创建一个Flask app. 12from flask import Flaskapp = Flask(__name__) 这个变量__name __ 是用来说明,这个应用是主应用还是其他程序的应用. 我们用app.route()来决定用什么来触发一个函数,这里,我们用一个URL来触发这个函数. 12345from flask import Flaskapp = Flask(__name__)# &apos;/&apos; indicates the default URL of the app@app.route(&apos;/&apos;)#put a function here 举例定义一个hello_world的方法:12345678910from flask import Flaskapp = Flask(__name__)# &apos;/&apos; indicates the default URL of the app@app.route(&apos;/&apos;)#put a function heredef hello_world(): return &apos;Hello,world!&apos; if __name__ == &quot;__main__&quot;: app.run() 不同的URLs返回不同页面:1234567891011121314151617from flask import Flaskapp = Flask(__name__)# &apos;/&apos; indicates the default URL of the app#http://127.0.0.1:5000/@app.route(&apos;/&apos;)#put a function heredef home(): return &apos;Home Page&apos;@app.route(&apos;/about&apos;)#put a function heredef about(): return &apos;About Us&apos;if __name__ == &quot;__main__&quot;: app.run() 打开网址,如图: 在网址后加上about,如图: 在URLs后面添加变量1234@app.route(&apos;/user/&lt;username&gt;&apos;)#put a function heredef show_user_profile(username): return &apos;User %s&apos; % username 打开网址,输入变量: 加上其他变量:123456@app.route(&apos;/post/&lt;int:post_id&gt;&apos;)def show_post(post_id): return &apos;Post %d&apos; % post_id @app.route(&apos;/example/&lt;float:ex&gt;&apos;)@app.route(&apos;/example/&lt;any:ex&gt;&apos;)]]></content>

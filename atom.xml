@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-28T13:25:59.317Z</updated>
+  <updated>2018-01-24T10:51:54.808Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>写点东西</title>
+    <link href="http://yoursite.com/2018/01/24/%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/"/>
+    <id>http://yoursite.com/2018/01/24/写点东西/</id>
+    <published>2018-01-24T09:16:41.000Z</published>
+    <updated>2018-01-24T10:51:54.808Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;最近发生了什么新奇的事儿&quot;&gt;&lt;a href=&quot;#最近发生了什么新奇的事儿&quot; class=&quot;headerlink&quot; title=&quot;最近发生了什么新奇的事儿&quot;&gt;&lt;/a&gt;最近发生了什么新奇的事儿&lt;/h3&gt;&lt;h4 id=&quot;1，住在我隔壁的小哥已经连续唱了两天的「体面」，不
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="感想随笔" scheme="http://yoursite.com/tags/%E6%84%9F%E6%83%B3%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>Python Web Servers</title>
